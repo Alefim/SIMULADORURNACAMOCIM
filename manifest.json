@@ -1,0 +1,22 @@
+{
+  "name": "Simulador de Urna Eletrônica",
+  "short_name": "Urna",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#162633",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
