@@ -12,11 +12,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12333',
-                nome: 'ADEUZERITA PACHECO',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '55456',
+                nome: 'Alan Brasil',
+                partido: 'Partido Socialista Brasileiro - PSD',
                 fotos: [
-                    {url:'adeuzerita.jpg', legenda: 'Vereador'}
+                    {url:'alan.jpg', legenda: 'Vereador'}
                 ]
             },
             {
