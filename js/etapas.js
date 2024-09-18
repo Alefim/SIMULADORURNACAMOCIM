@@ -20,11 +20,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '15000',
-                nome: 'ANANIAS',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45123',
+                nome: 'ALDACY',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'ananias_borges.jpg', legenda: 'Vereador'}
+                    {url:'aldacy.jpg', legenda: 'Vereador'}
                 ]
             },
             {
