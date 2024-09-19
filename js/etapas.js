@@ -259,20 +259,16 @@ let etapas = [
                     {url:'vice.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
-
-        ]
-        },
-
-    {
+            {
                 numero:'13',
                 nome:'EUVALDETE FERRO',
                 partido:'Partido dos Trabalhadores - PT',
                 vice: 'ZÉ NILSON',
                 fotos:[
                     {url:'euval.jpg', legenda: 'Prefeito'},
-                    {url:'zenilson.jpg', legenda: 'Vice-Prefeito', small: true}
+                    {url:'aldi_borges.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
         ]
-    
-
+    }
+];
