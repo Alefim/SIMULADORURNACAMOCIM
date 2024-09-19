@@ -108,11 +108,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12108',
-                nome: 'MARCOS VIEIRA',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '40333',
+                nome: 'JAMES DO PEIXE',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'marcos_vieira.jpg', legenda: 'Vereador'}
+                    {url:'JAMES DO PEIXE.jpg', legenda: 'Vereador'}
                 ]
             },
             {
