@@ -72,7 +72,7 @@ let etapas = [
                 nome: 'CLEILE JUNIOR',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'cleilejr.jpg', legenda: 'Vereador'}
+                    {url:'cleilejr.JPG', legenda: 'Vereador'}
                 ]
             },
             {
