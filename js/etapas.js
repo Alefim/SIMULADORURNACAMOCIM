@@ -84,11 +84,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13222',
-                nome: 'HILTON ROCHA',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40777',
+                nome: 'EMANOEL VIEIRA',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'hilton.jpg', legenda: 'Vereador'}
+                    {url:'emanuel.jpg', legenda: 'Vereador'}
                 ]
             },
             {
