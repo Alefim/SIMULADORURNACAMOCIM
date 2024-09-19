@@ -56,7 +56,7 @@ let etapas = [
                 nome: 'CHIQUINHO DO PEIXE',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'chiquinhodopeixe.jpg', legenda: 'Vereador'}
+                    {url:'chico.jpg', legenda: 'Vereador'}
                 ]
             },
             {
