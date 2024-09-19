@@ -92,11 +92,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '15333',
-                nome: 'JOYRA ENFERMEIRA',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45655',
+                nome: 'EXPEDITO PINTURAS',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'joyra.jpg', legenda: 'Vereador'}
+                    {url:'expedito.jpg', legenda: 'Vereador'}
                 ]
             },
             {
