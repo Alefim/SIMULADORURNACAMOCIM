@@ -264,11 +264,6 @@ let etapas = [
         },
 
     {
-
-        titulo: 'PREFEITO',
-        numeros: 1,
-        candidatos: [
-            {
                 numero:'13',
                 nome:'EUVALDETE FERRO',
                 partido:'Partido dos Trabalhadores - PT',
@@ -279,10 +274,5 @@ let etapas = [
                 ]
             },
         ]
-    },
-]
-
-{
-
-}
+    
 
