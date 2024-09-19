@@ -259,6 +259,15 @@ let etapas = [
                     {url:'vice.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
+
+        ]
+        },
+
+    {
+
+        titulo: 'PREFEITO',
+        numeros: 3,
+        candidatos: [
             {
                 numero:'13',
                 nome:'EUVALDETE FERRO',
