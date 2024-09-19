@@ -100,11 +100,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13333',
-                nome: 'LEICIVALDO RIBEIRO',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40140',
+                nome: 'WESLEY DO MANGA',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'leicivaldo.jpg', legenda: 'Vereador'}
+                    {url:'wesleydomanga.jpg', legenda: 'Vereador'}
                 ]
             },
             {
