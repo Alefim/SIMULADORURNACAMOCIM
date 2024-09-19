@@ -265,7 +265,7 @@ let etapas = [
                 partido:'Partido dos Trabalhadores - PT',
                 vice: 'ZÉ NILSON',
                 fotos:[
-                    {url:'euvaldete.jpg', legenda: 'Prefeito'},
+                    {url:'euval.jpg', legenda: 'Prefeito'},
                     {url:'zenilson.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
