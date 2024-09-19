@@ -269,6 +269,18 @@ let etapas = [
                     {url:'zenilson.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
+            {
+                numero:'33',
+                nome:'MAURO GAGO',
+                partido:'Mobilização Nacional - MOBILIZA',
+                vice: 'GROSSO DA OFICINA',
+                fotos:[
+                    {url:'MAURO GAGO.jpg', legenda: 'Prefeito'},
+                    {url:'GROSSO.jpg', legenda: 'Vice-Prefeito', small: true} 
+                ]
+            }
+
+            
         ]
     }
 ];
