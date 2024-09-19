@@ -68,11 +68,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13555',
-                nome: 'EVALDO GOMES',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40400',
+                nome: 'CLEILE JUNIOR',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'evaldo_gomes.jpg', legenda: 'Vereador'}
+                    {url:'cleilejr.jpg', legenda: 'Vereador'}
                 ]
             },
             {
