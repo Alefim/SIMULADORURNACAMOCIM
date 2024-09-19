@@ -60,11 +60,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12000',
-                nome: 'ERIVAN PIRULITO',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '40888',
+                nome: 'KLEBER',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'erivan_pirulito.jpg', legenda: 'Vereador'}
+                    {url:'kleber.jpg', legenda: 'Vereador'}
                 ]
             },
             {
