@@ -76,11 +76,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13789',
-                nome: 'GENO PEREIRA',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '55123',
+                nome: 'BENÉ FIRMO',
+                partido: 'Partido Social Democrático - PSD',
                 fotos: [
-                    {url:'geno_pereira.jpg', legenda: 'Vereador'}
+                    {url:'bene.jpg', legenda: 'Vereador'}
                 ]
             },
             {
