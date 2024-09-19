@@ -52,11 +52,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12777',
-                nome: 'DIONEI MENDES',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '40999',
+                nome: 'CHIQUINHO DO PEIXE',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'dionei.jpg', legenda: 'Vereador'}
+                    {url:'chiquinhodopeixe.jpg', legenda: 'Vereador'}
                 ]
             },
             {
