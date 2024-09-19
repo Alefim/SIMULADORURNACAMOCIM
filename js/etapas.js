@@ -36,19 +36,19 @@ let etapas = [
                 ]
             },
             {
-                numero: '15123',
-                nome: 'CUMPADE COSMO',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45222',
+                nome: 'Antonio Rita',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'cumpade_cosmo.jpg', legenda: 'Vereador'}
+                    {url:'antonio rita.jpg', legenda: 'Vereador'}
                 ]
             },
             {
-                numero: '13123',
-                nome: 'DANDARA TAVARES',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40444',
+                nome: 'CAROL DO CÉSAR',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'dandara.jpg', legenda: 'Vereador'}
+                    {url:'carol.jpg', legenda: 'Vereador'}
                 ]
             },
             {
