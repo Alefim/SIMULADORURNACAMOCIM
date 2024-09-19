@@ -104,7 +104,7 @@ let etapas = [
                 nome: 'WESLEY DO MANGA',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'wesleydomanga.jpg', legenda: 'Vereador'}
+                    {url:'wesley11.jpg', legenda: 'Vereador'}
                 ]
             },
             {
