@@ -14,7 +14,7 @@ let etapas = [
             {
                 numero: '55456',
                 nome: 'Alan Brasil',
-                partido: 'Partido Socialista Brasileiro - PSD',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
                     {url:'alan.jpg', legenda: 'Vereador'}
                 ]
@@ -28,9 +28,9 @@ let etapas = [
                 ]
             },
             {
-                numero: '13444',
-                nome: 'CÍCERO DA CONFIANÇA',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40100',
+                nome: 'ZEZINHO DA RADIO',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
                     {url:'cicero.jpg', legenda: 'Vereador'}
                 ]
