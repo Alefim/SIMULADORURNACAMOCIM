@@ -156,11 +156,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '40001',
-                nome: 'PAULO DA CAÇAMBA',
-                partido: 'Partido Socialista Brasileiro - PSB',
+                numero: '45000',
+                nome: 'DINHO DO FRANGO',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'paulo_cacamba.jpg', legenda: 'Vereador'}
+                    {url:'dinhodofrango.jpg', legenda: 'Vereador'}
                 ]
             },
             {
