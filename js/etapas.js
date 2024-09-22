@@ -140,11 +140,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '40111',
-                nome: 'NEGUINHA DO HOTEL',
+                numero: '40840',
+                nome: 'GENERAL MOTOTAXI',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'neguinha.jpg', legenda: 'Vereador'}
+                    {url:'generalmoto.JPG', legenda: 'Vereador'}
                 ]
             },
             {
