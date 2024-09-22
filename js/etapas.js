@@ -124,11 +124,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13000',
-                nome: 'MARIQUINHA DO NEGUIN',
-                partido: 'Partido dos Trabalhadores - PT',
+                numero: '40000',
+                nome: 'LÚCIA',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'mariquinha.jpg', legenda: 'Vereador'}
+                    {url:'LUCIA.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
@@ -156,7 +156,7 @@ let etapas = [
                 ]
             },
             {
-                numero: '40000',
+                numero: '40001',
                 nome: 'PAULO DA CAÇAMBA',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
