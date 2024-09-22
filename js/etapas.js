@@ -148,9 +148,9 @@ let etapas = [
                 ]
             },
             {
-                numero: '15111',
-                nome: 'OTINHA',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45555',
+                nome: 'IVANES IRMÃ DO DR IVANALDO',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
                     {url:'otinha.jpg', legenda: 'Vereador'}
                 ]
