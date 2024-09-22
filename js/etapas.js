@@ -104,7 +104,7 @@ let etapas = [
                 nome: 'WESLEY DO MANGA',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'wesley11.jpg', legenda: 'Vereador'}
+                    {url:'wesley11.jpg', legenda: 'Vereador'} 
                 ]
             },
             {
@@ -116,11 +116,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '15555',
-                nome: 'MARILENE ANDRADE',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45111',
+                nome: 'Sargento Guilherme',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'marilene.jpg', legenda: 'Vereador'}
+                    {url:'guirlheme.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
