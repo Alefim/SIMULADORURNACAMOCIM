@@ -220,11 +220,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '15666',
-                nome: 'VALÉRIA DIAS',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '55444',
+                nome: 'ISCOL DO BAR',
+                partido: 'Partido Social Democrático - PSD',
                 fotos: [
-                    {url:'valeria_dias.jpg', legenda: 'Vereador'}
+                    {url:'iscoldobar.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
