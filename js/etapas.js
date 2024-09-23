@@ -228,11 +228,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12888',
+                numero: '40455',
                 nome: 'NALDO DA BOA ESPERANÇA',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'naldo.JPG', legenda: 'Vereador'}
+                    {url:'naldo.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
