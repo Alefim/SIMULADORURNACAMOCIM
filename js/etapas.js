@@ -229,10 +229,10 @@ let etapas = [
             },
             {
                 numero: '12888',
-                nome: 'ZÉ FILHO',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                nome: 'NALDO DA BOA ESPERANÇA',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'ze_filho.jpg', legenda: 'Vereador'}
+                    {url:'naldo.JPG', legenda: 'Vereador'}
                 ]
             },
             {
