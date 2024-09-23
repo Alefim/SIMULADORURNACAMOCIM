@@ -212,11 +212,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12222',
-                nome: 'TIARA LIS',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '55321',
+                nome: 'IRANILDO',
+                partido: 'Partido Social Democrático - PSD',
                 fotos: [
-                    {url:'tiara_lis.jpg', legenda: 'Vereador'}
+                    {url:'iranildo.jpg', legenda: 'Vereador'}
                 ]
             },
             {
