@@ -164,11 +164,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '15222',
-                nome: 'PEDRO DA OLÍVIA',
-                partido: 'Movimento Democrático Brasileiro - MDB',
+                numero: '45444',
+                nome: 'DANILO DA TOPIC',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'pedro_olivia.jpg', legenda: 'Vereador'}
+                    {url:'danilodatopic.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
