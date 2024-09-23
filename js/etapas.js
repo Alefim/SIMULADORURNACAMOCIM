@@ -180,11 +180,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '13456',
-                nome: 'PETRONILDA',
-                partido: 'Partido Dos Trabalhadores - PT',
+                numero: '40222',
+                nome: 'JEOVÁ VASCONCELOS',
+                partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'petronilda.jpg', legenda: 'Vereador'}
+                    {url:'jeova.jpg', legenda: 'Vereador'}
                 ]
             },
             {
