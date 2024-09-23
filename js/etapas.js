@@ -196,11 +196,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12345',
-                nome: 'ROBERTO CAPITÃO',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '55055',
+                nome: 'SAMILLY CUNHA',
+                partido: 'Partido Social Democrático - PSD',
                 fotos: [
-                    {url:'roberto_cap.jpg', legenda: 'Vereador'}
+                    {url:'samilycunha.jpg', legenda: 'Vereador'}
                 ]
             },
             {
