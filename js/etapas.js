@@ -232,7 +232,7 @@ let etapas = [
                 nome: 'NALDO DA BOA ESPERANÇA',
                 partido: 'Partido Socialista Brasileiro - PSB',
                 fotos: [
-                    {url:'naldo.jpeg', legenda: 'Vereador'}
+                    {url:'naldo.jpg', legenda: 'Vereador'}
                 ]
             },
             {
