@@ -204,11 +204,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12444',
-                nome: 'RODRIGO ROCHA',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '45999',
+                nome: 'RICARDO LIMA',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'rodrigo.jpg', legenda: 'Vereador'}
+                    {url:'ricardolima.jpg', legenda: 'Vereador'}
                 ]
             },
             {
