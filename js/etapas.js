@@ -7,7 +7,7 @@ let etapas = [
                 numero: '55456',
                 nome: 'ALAN BRASIL',
                 partido: 'PSD',
-                fotos: [{url: 'alan_brasil.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'alan.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '45123',
@@ -19,13 +19,13 @@ let etapas = [
                 numero: '45040',
                 nome: 'ANA AGUIAR',
                 partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'ana_aguiar.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'anaaguiar.jpeg', legenda: 'Candidata'}]
             },
             {
                 numero: '13999',
                 nome: 'ANDERSON ALVES',
                 partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'anderson_alves.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'anderson.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '18222',
@@ -37,67 +37,67 @@ let etapas = [
                 numero: '45222',
                 nome: 'ANTONIO RITA',
                 partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'antonio_rita.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'antoniorita.jpeg', legenda: 'Candidato'}]
             },
             {
                 numero: '10555',
                 nome: 'ARLIS BARROS',
                 partido: 'REPUBLICANOS',
-                fotos: [{url: 'arlis_barros.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'alisbarros.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '13555',
                 nome: 'ATAÍDE DA CLEMENTE CONSTRUÇÕES',
                 partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'ataide_clemente.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'ataide.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '33333',
                 nome: 'BATAN',
                 partido: 'MOBILIZA',
-                fotos: [{url: 'batan.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'batan.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '55123',
                 nome: 'BENÉ FIRMO',
                 partido: 'PSD',
-                fotos: [{url: 'bene_firmo.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'benefirmo.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '10666',
                 nome: 'BERNARDA DOS KMS',
                 partido: 'REPUBLICANOS',
-                fotos: [{url: 'bernarda_kms.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'BERNARDA.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '55222',
                 nome: 'BETO FERRARI',
                 partido: 'PSD',
-                fotos: [{url: 'beto_ferrari.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'BETOFERRARI.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '65000',
                 nome: 'BRUNA DO RÉGIS DA IPÚ',
                 partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'bruna_regis.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'bruna.jpeg', legenda: 'Candidata'}]
             },
             {
                 numero: '45678',
                 nome: 'CARLÃO',
                 partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'carlão.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'carlao.jpeg', legenda: 'Candidato'}]
             },
             {
                 numero: '10456',
                 nome: 'CARLINHOS RIBEIRO',
                 partido: 'REPUBLICANOS',
-                fotos: [{url: 'carlinhos_ribeiro.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'carlinhosribeiro.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '33144',
                 nome: 'CARLOS CRESPO',
                 partido: 'MOBILIZA',
-                fotos: [{url: 'carlos_crespo.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'carloscrespo.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '40444',
