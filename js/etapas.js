@@ -415,19 +415,19 @@ let etapas = [
                 numero: '10345',
                 nome: 'MANELZINHO DO MILHO VERDE',
                 partido: 'REPUBLICANOS',
-                fotos: [{url: 'manelzinho_milho_verde.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'MANELZINHO.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '18111',
                 nome: 'MARADONNA',
                 partido: 'Federação PSOL REDE(PSOL/REDE)',
-                fotos: [{url: 'maradonna.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'MARADONNA.jpeg', legenda: 'Candidato'}]
             },
             {
                 numero: '10000',
                 nome: 'MARCOS COELHO',
                 partido: 'REPUBLICANOS',
-                fotos: [{url: 'marcos_coelho.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'MARCOSCOELHO.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '44777',
