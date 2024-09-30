@@ -236,11 +236,11 @@ let etapas = [
                 ]
             },
             {
-                numero: '12111',
-                nome: 'ZULEIDE RIBEIRO',
-                partido: 'Partido Democrático Trabalhista - PDT',
+                numero: '45040',
+                nome: 'ANA AGUIAR',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
                 fotos: [
-                    {url:'zuleide.jpg', legenda: 'Vereador'}
+                    {url:'anaaguiar.jpeg', legenda: 'Vereador'}
                 ]
             },
         ]
