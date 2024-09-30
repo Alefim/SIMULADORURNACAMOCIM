@@ -13,7 +13,6 @@ let etapas = [
             },
             {
 
-                
                 numero: '55456',
                 nome: 'Alan Brasil',
                 partido: 'Partido Socialista Brasileiro - PSB',
@@ -31,8 +30,6 @@ let etapas = [
                     ]
                 },
                 {
-
-                
                     numero: '10555',
                     nome: 'ARLIS BARROS',
                     partido: 'REPUBLICANO',
