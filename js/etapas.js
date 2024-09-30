@@ -49,7 +49,7 @@ let etapas = [
                 numero: '13555',
                 nome: 'ATAÍDE DA CLEMENTE CONSTRUÇÕES',
                 partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'ataide.jpg', legenda: 'Candidato'}]
+                fotos: [{url: 'CONSTRUÇÕES.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '33333',
