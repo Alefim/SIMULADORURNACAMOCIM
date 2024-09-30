@@ -103,7 +103,7 @@ let etapas = [
                 numero: '40444',
                 nome: 'CAROL DO CÉSAR',
                 partido: 'PSB',
-                fotos: [{url: 'carol_cesar.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'carol.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '10145',
