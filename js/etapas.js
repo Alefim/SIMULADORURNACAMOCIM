@@ -246,6 +246,18 @@ let etapas = [
         ]
     },
     {
+        numero: '13999',
+                nome: 'ANDERSON ALVES',
+                partido: 'Partido dos Trabalhadores - PT',
+                fotos: [
+                    {url:'andersonlima.jpg', legenda: 'Vereador'}
+                ]
+            },
+            {
+        
+
+
+
         titulo: 'PREFEITO',
         numeros: 2,
         candidatos: [
