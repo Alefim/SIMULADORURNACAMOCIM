@@ -12,6 +12,8 @@ let etapas = [
                 ]
             },
             {
+
+                
                 numero: '55456',
                 nome: 'Alan Brasil',
                 partido: 'Partido Socialista Brasileiro - PSB',
@@ -20,6 +22,15 @@ let etapas = [
                 ]
             },
             {
+                
+                    numero: '13999',
+                    nome: 'Anderson Alves',
+                    partido: 'Partido dos Trabalhadores - PT',
+                    fotos: [
+                        {url:'alan.jpg', legenda: 'Vereador'}
+                    ]
+                },
+        {
                 numero: '45123',
                 nome: 'Aldacy',
                 partido: 'Partido Da Social Democracia Brasileira - PSDB',
@@ -246,14 +257,6 @@ let etapas = [
         ]
     },
     {
-        numero: '13999',
-                nome: 'ANDERSON ALVES',
-                partido: 'Partido dos Trabalhadores - PT',
-                fotos: [
-                    {url:'anderson.jpeg', legenda: 'Vereador'}
-                ]
-            },
-            {
         
 
 
