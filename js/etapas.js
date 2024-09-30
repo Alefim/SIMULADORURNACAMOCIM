@@ -30,6 +30,16 @@ let etapas = [
                         {url:'anderson.jpg', legenda: 'Vereador'}
                     ]
                 },
+                {
+
+                
+                    numero: '10555',
+                    nome: 'ARLIS BARROS',
+                    partido: 'REPUBLICANO',
+                    fotos: [
+                        {url:'alisbarros.jpg', legenda: 'Vereador'}
+                    ]
+                },
         {
                 numero: '45123',
                 nome: 'Aldacy',
