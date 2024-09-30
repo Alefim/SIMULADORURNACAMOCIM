@@ -250,7 +250,7 @@ let etapas = [
                 nome: 'ANDERSON ALVES',
                 partido: 'Partido dos Trabalhadores - PT',
                 fotos: [
-                    {url:'andersonlima.jpg', legenda: 'Vereador'}
+                    {url:'anderson.jpeg', legenda: 'Vereador'}
                 ]
             },
             {
