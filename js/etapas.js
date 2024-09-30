@@ -11,10 +11,9 @@ let etapas = [
                     {url:'iracildade.jpg', legenda: 'Vereador'}
                 ]
             },
-
-            
             {
 
+                
                 numero: '55456',
                 nome: 'Alan Brasil',
                 partido: 'Partido Socialista Brasileiro - PSB',
@@ -32,11 +31,13 @@ let etapas = [
                     ]
                 },
                 {
+
+                
                     numero: '10555',
                     nome: 'ARLIS BARROS',
                     partido: 'REPUBLICANO',
                     fotos: [
-                        {url:'alisbarros.jpg', legenda: 'Vereador'}
+                        {url:'alan.jpg', legenda: 'Vereador'}
                     ]
                 },
         {
@@ -255,7 +256,6 @@ let etapas = [
                     {url:'naldo.jpg', legenda: 'Vereador'}
                 ]
             },
-            
             {
                 numero: '45040',
                 nome: 'ANA AGUIAR',
@@ -268,6 +268,7 @@ let etapas = [
     },
     {
         
+
 
 
         titulo: 'PREFEITO',
