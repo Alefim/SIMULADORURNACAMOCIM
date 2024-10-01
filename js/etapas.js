@@ -502,16 +502,16 @@ let etapas = [
                 fotos: [{url: 'THAIS.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '44422',
-                nome: 'PRISCO CAVALCANTE',
-                partido: 'UNIÃO',
-                fotos: [{url: 'prisco_cavalcante.jpeg', legenda: 'Candidato'}]
+                numero: '10111',
+                nome: 'TETÉ DA SAÚDE',
+                partido: 'Republicanos - REPUBLICANOS',
+                fotos: [{url: 'TETÉ DA SAÚDE.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '13556',
-                nome: 'PRISCILA DO VAL',
-                partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'priscila_val.jpeg', legenda: 'Candidata'}]
+                numero: '33140',
+                nome: 'SANSÃO DA OLINDA',
+                partido: 'Mobilização Nacional - MOBILIZA',
+                fotos: [{url: 'SANSÃO DA OLINDA.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '14001',
