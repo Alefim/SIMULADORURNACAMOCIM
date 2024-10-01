@@ -583,7 +583,7 @@ let etapas = [
                 numero: '40456',
                 nome: 'PROFESSORA MARIANA',
                 partido: 'Partido Socialista Brasileiro - PSBS',
-                fotos: [{url: 'PROFESSORA MARIANA.jpg', legenda: 'Candidato'}]
+                fotos: [{url: 'PROFESSORAMARIANA.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '44000',
@@ -598,10 +598,10 @@ let etapas = [
                 fotos: [{url: 'PROFESSOR JENKIS.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '55100',
-                nome: 'WANDERLEY',
-                partido: 'PSD',
-                fotos: [{url: 'wanderley.jpeg', legenda: 'Candidato'}]
+                numero: '10777',
+                nome: 'XANDYNHA DA POP',
+                partido: 'REPUBLICANOS',
+                fotos: [{url: 'XANDYNHADAPOP.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '44001',
