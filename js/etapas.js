@@ -472,22 +472,22 @@ let etapas = [
                 fotos: [{url: 'zezinho.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '44222',
-                nome: 'NENÉM',
-                partido: 'UNIÃO',
-                fotos: [{url: 'nenem.jpeg', legenda: 'Candidato'}]
+                numero: '33111',
+                nome: 'ZÉ MÁRIO',
+                partido: 'Mobilização Nacional - MOBILIZA',
+                fotos: [{url: 'ZÉ MÁRIO.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '45030',
-                nome: 'NIVALDO',
-                partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'nivaldo.jpeg', legenda: 'Candidato'}]
+                numero: '10777',
+                nome: 'ZÉ ELIZEU DA TORTADO',
+                partido: 'Partido Dos Trabalhadores - PT',
+                fotos: [{url: 'ZÉ ELIZEU DA TORTA.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '11566',
-                nome: 'PAULINHO FURACÃO',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'paulinho_furacao.jpeg', legenda: 'Candidato'}]
+                nome: 'XANDYNHA DA POP',
+                partido: 'Republicanos - REPUBLICANOS',
+                fotos: [{url: 'XANDYNHA DA POP.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '14123',
