@@ -448,10 +448,10 @@ let etapas = [
                 fotos: [{url: 'mazim_praias.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '33120',
-                nome: 'MEIRE',
+                numero: '44123',
+                nome: 'NEIRI DO DÃO',
                 partido: 'MOBILIZA',
-                fotos: [{url: 'meire.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'NEIRI DO DÃO.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '33136',
@@ -460,16 +460,16 @@ let etapas = [
                 fotos: [{url: 'MIGUELDOGESSO.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '10234',
-                nome: 'MIRIA BAIANA',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'mira_baiana.jpeg', legenda: 'Candidata'}]
+                numero: '40455',
+                nome: 'NALDO DA BOA ESPERANÇA',
+                partido: 'PSB',
+                fotos: [{url: 'naldo.jpg', legenda: 'Candidata'}]
             },
             {
-                numero: '14000',
-                nome: 'NATO',
-                partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'nato.jpeg', legenda: 'Candidato'}]
+                numero: '40100',
+                nome: 'ZEZINHO',
+                partido: 'Partido Socialista Brasileiro - PSB',
+                fotos: [{url: 'zezinho.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '44222',
@@ -527,27 +527,27 @@ let etapas = [
             },
             {
                 numero: '13333',
-                nome: 'RICARDO DINIZ',
-                partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'ricardo_diniz.jpeg', legenda: 'Candidato'}]
+                nome: 'NETO VAULINO',
+                partido: 'Partido Dos Trabalhadores - PT',
+                fotos: [{url: 'NETO VAULINO.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '30000',
-                nome: 'ROBERTO ALVES',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'roberto_alves.jpeg', legenda: 'Candidato'}]
+                numero: '13111',
+                nome: 'NYCOLY DOURADO',
+                partido: 'Partido Dos Trabalhadores - PT',
+                fotos: [{url: 'NYCOLY DOURADO.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '44412',
-                nome: 'ROGÉRIO SAMPAIO',
-                partido: 'UNIÃO',
-                fotos: [{url: 'rogerio_sampaio.jpeg', legenda: 'Candidato'}]
+                numero: '10222',
+                nome: 'OLIETEO',
+                partido: 'Republicanos - REPUBLICANOS',
+                fotos: [{url: 'OLIETE.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '10445',
-                nome: 'ROMEU',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'romeu.jpeg', legenda: 'Candidato'}]
+                nome: 'PASTOR ANDRÉ',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
+                fotos: [{url: 'PASTOR ANDRÉ.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '55500',
