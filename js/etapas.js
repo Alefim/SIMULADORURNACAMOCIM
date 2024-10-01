@@ -373,7 +373,7 @@ let etapas = [
                 numero: '40888',
                 nome: 'KLEBER',
                 partido: 'PSB',
-                fotos: [{url: 'kleber.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'kleber.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '10333',
@@ -433,13 +433,13 @@ let etapas = [
                 numero: '44777',
                 nome: 'MARTA BARROS',
                 partido: 'UNIÃO',
-                fotos: [{url: 'marta_barros.jpeg', legenda: 'Candidata'}]
+                fotos: [{url: 'MARTA.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '40555',
                 nome: 'MASTRÔ',
                 partido: 'PSB',
-                fotos: [{url: 'mastros.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'MASTRÔ.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '33777',
@@ -457,7 +457,7 @@ let etapas = [
                 numero: '33136',
                 nome: 'MIGUEL DO GESSO',
                 partido: 'MOBILIZA',
-                fotos: [{url: 'miguel_gesso.jpeg', legenda: 'Candidato'}]
+                fotos: [{url: 'MIGUELDOGESSO.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '10234',
@@ -520,10 +520,10 @@ let etapas = [
                 fotos: [{url: 'raymond.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '13600',
-                nome: 'REINALDO VIEIRA',
-                partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'reinaldo_vieira.jpeg', legenda: 'Candidato'}]
+                numero: '40140',
+                nome: 'WESLEY DO MANGA',
+                partido: 'Partido Socialista Brasileiro - PSB',
+                fotos: [{url: 'wesleydomanga.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '13333',
