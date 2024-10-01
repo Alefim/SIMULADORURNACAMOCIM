@@ -490,16 +490,16 @@ let etapas = [
                 fotos: [{url: 'XANDYNHA DA POP.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '14123',
-                nome: 'PEDRO ALBUQUERQUE',
-                partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'pedro_albuquerque.jpeg', legenda: 'Candidato'}]
+                numero: '13123',
+                nome: 'VALDIVINO FÉLIX.',
+                partido: 'Partido Dos Trabalhadores - PT',
+                fotos: [{url: 'VALDIVINO FÉLIX.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '14100',
-                nome: 'POZOLI',
-                partido: 'Federação BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)',
-                fotos: [{url: 'pozoli.jpeg', legenda: 'Candidato'}]
+                numero: '33013',
+                nome: 'THAIS',
+                partido: 'Mobilização Nacional - MOBILIZA',
+                fotos: [{url: 'THAIS.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '44422',
