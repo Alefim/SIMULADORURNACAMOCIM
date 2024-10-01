@@ -514,10 +514,10 @@ let etapas = [
                 fotos: [{url: 'SANSÃO DA OLINDA.jpg', legenda: 'Candidata'}]
             },
             {
-                numero: '14001',
-                nome: 'RAYMOND',
-                partido: 'Federação PSDB CIDADANIA(PSDB/CIDADANIA)',
-                fotos: [{url: 'raymond.jpeg', legenda: 'Candidato'}]
+                numero: '55055',
+                nome: 'SAMILLY CUNHA',
+                partido: 'Partido Social Democrático - PSD',
+                fotos: [{url: 'samilycunha.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '40140',
@@ -550,10 +550,10 @@ let etapas = [
                 fotos: [{url: 'PASTOR ANDRÉ.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '55500',
-                nome: 'SANDRA GOMES',
-                partido: 'PSD',
-                fotos: [{url: 'sandra_gomes.jpeg', legenda: 'Candidata'}]
+                numero: '44222',
+                nome: 'ROGYER DA CHICA RICA.',
+                partido: 'União Brasil - UNIÃO',
+                fotos: [{url: 'ROGYER DA CHICA RICA.jpg', legenda: 'Candidata'}]
             },
             {
                 numero: '55233',
@@ -562,10 +562,10 @@ let etapas = [
                 fotos: [{url: 'sandro_pires.jpeg', legenda: 'Candidato'}]
             },
             {
-                numero: '33330',
-                nome: 'SAVIO DA BANDA',
-                partido: 'MOBILIZA',
-                fotos: [{url: 'savio_banda.jpeg', legenda: 'Candidato'}]
+                numero: '45999',
+                nome: 'RICARDO LIMA',
+                partido: 'Partido Da Social Democracia Brasileira - PSDB',
+                fotos: [{url: 'ricardolima.jpg', legenda: 'Candidato'}]
             },
             {
                 numero: '13000',
@@ -574,28 +574,28 @@ let etapas = [
                 fotos: [{url: 'shirley.jpeg', legenda: 'Candidata'}]
             },
             {
-                numero: '10001',
-                nome: 'SIDNEY JÚNIOR',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'sidney_junior.jpeg', legenda: 'Candidato'}]
+                numero: '13777',
+                nome: 'PROFESSORA CECILIA',
+                partido: 'Partido Dos Trabalhadores - PT',
+                fotos: [{url: 'professoracecilia.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '11000',
-                nome: 'TALISON',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'talison.jpeg', legenda: 'Candidato'}]
+                numero: '40456',
+                nome: 'PROFESSORA MARIANA',
+                partido: 'Partido Socialista Brasileiro - PSBS',
+                fotos: [{url: 'PROFESSORA MARIANA.jpg', legenda: 'Candidato'}]
             },
             {
-                numero: '33000',
-                nome: 'VANESSA PEREIRA',
-                partido: 'MOBILIZA',
-                fotos: [{url: 'vanessa_pereira.jpeg', legenda: 'Candidata'}]
+                numero: '44000',
+                nome: 'PROFESSOR MÁRIO ROBERTO',
+                partido: 'União Brasil - UNIÃO',
+                fotos: [{url: 'PROFESSOR MÁRIO ROBERTO.jpg', legenda: 'Candidata'}]
             },
             {
-                numero: '11400',
-                nome: 'VANDERLEI',
-                partido: 'REPUBLICANOS',
-                fotos: [{url: 'vanderlei.jpeg', legenda: 'Candidato'}]
+                numero: '55888',
+                nome: 'PROFESSOR JENKIS',
+                partido: 'Partido Social Democrático - PSD',
+                fotos: [{url: 'PROFESSOR JENKIS.jpeg', legenda: 'Candidato'}]
             },
             {
                 numero: '55100',
