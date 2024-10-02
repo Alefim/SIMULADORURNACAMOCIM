@@ -1,117 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Urna Eletrônica</title>
-        <meta name="description" content="Simulador de Urna Eletrônica">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">        
-        <link rel="manifest" href="manifest.json">
-    
-        <!-- Adicionar à tela inicial do Chrome no Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="Images/urna.png">
-        <meta name="theme-color" content="#162633">
-    
-        <!-- Adicionar à tela inicial do Safari no iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="Urna">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="apple-touch-icon-precomposed" href="Images/urna.png">
-    
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="Images/urna.png">
-        <meta name="msapplication-TileColor" content="#162633">
-    
-        <script>
-        if (window.location.protocol != "https:" && window.location.hostname == "https://alefim.github.io/SIMULADORURNACAMOCIM/")
-            window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-        </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Urna Eletrônica</title>
+    <meta name="description" content="Simulador de Urna Eletrônica">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">        
+    <link rel="manifest" href="manifest.json">
 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Preencher a tela */
+            margin: 0;
+            background-color: #f0f0f0; /* Cor de fundo */
+        }
 
+        .urna {
+            width: 300px; /* Ajuste conforme necessário */
+            height: 400px; /* Ajuste conforme necessário */
+            background-color: #fff;
+            border: 2px solid #162633;
+            border-radius: 10px;
+            position: relative;
+            animation: rotate 10s linear infinite; /* Rotação contínua */
+        }
 
-    </head>
-    <body>
-        
-            <div class="titulo"><h1>Simulador de Urna Eletrônica</h1></div>
-            <div class="urna">
-                <div class="tela">
-                    <div class="d-1">
-                        <div class="d-1-left">
-                            <div class="d-1-1">
-                                <span>SEU VOTO PARA</span>
-                            </div>
-                            <div class="d-1-2">
-                                <span>VEREADOR</span>
-                            </div>
-                            <div class="d-1-3">
-                                <div class="numero pisca"></div>
-                                <div class="numero"></div>
-                            </div>
-                            <div class="d-1-4">
-                                Nome: FULANO<br/>
-                                Partido: NOVO<br/>
-                                Vice-Prefeito: BELTRANO<br/>
-                            </div>
-                        </div>
-                        <div class="d-1-right">
-                            <div class="d-1-image">
-                                <img src="Images/hagar.PNG" alt="" />
-                                Prefeito
-                            </div>
-                            <div class="d-1-image small">
-                                <img src="Images/guy.PNG" alt="" />
-                                Vice-Prefeito
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-2">
-                        Aperte a tela: <br/>
-                        CONFIRMA para CONFIRMAR este voto<br/>
-                        CORRIGE para CORRIGIR este voto
-                    </div>
-                </div>
-                <div class="esquerda">
-                    <div class="topo-esquerda"> 
-                        <div class="logo"> <img src="Images/brasao.png" alt="" /> </div>
-                        <div class="Justica-eleitoral">JUSTIÇA<br/>ELEITORAL</div>
-                    </div>
-                    <div class="teclado">
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('1')">1</div>
-                            <div class="teclado--botao" onclick="clicou('2')">2</div>
-                            <div class="teclado--botao" onclick="clicou('3')">3</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('4')">4</div>
-                            <div class="teclado--botao" onclick="clicou('5')">5</div>
-                            <div class="teclado--botao" onclick="clicou('6')">6</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('7')">7</div>
-                            <div class="teclado--botao" onclick="clicou('8')">8</div>
-                            <div class="teclado--botao" onclick="clicou('9')">9</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('0')">0</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
-                            <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
-                            <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
-                        </div>
-                    </div>
-                </div>            
-            </div>
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-            <h2><a href="index.html" target="_self"><strong>Simular de Novo</strong></a></h2>
-        
-            <script src="js/etapas.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/service-worker.js"></script>
-            <script src="js/install.js"></script>
-            <br>
-    <p aling="left"><b>Criador:</b> Álefim Oliveira Silva</p>
-    <H4>Bacharelado em Ciência da Computação - UVA/CE Analista e Subdesenvolvedor de Sistemas - Unopar - IFCE</H4>
-    </body>    
+        .tela {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <h1>Simulador de Urna Eletrônica</h1>
+            <p>Seu voto para vereador</p>
+            <p>Nome: FULANO</p>
+            <p>Partido: NOVO</p>
+        </div>
+    </div>
+
+    <button onclick="toggleRotation()">Iniciar/Parar Rotação</button>
+
+    <script>
+        let rotating = true;
+
+        function toggleRotation() {
+            const urna = document.querySelector('.urna');
+            if (rotating) {
+                urna.style.animationPlayState = 'paused'; // Para a animação
+            } else {
+                urna.style.animationPlayState = 'running'; // Inicia a animação
+            }
+            rotating = !rotating; // Alterna o estado
+        }
+    </script>
+</body>    
 </html>
