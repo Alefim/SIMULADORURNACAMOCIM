@@ -657,6 +657,17 @@ let etapas = [
                 ]
             },
             {
+
+                numero:'33',
+                nome:'MAURO GAGO',
+                partido:'Mobilização Nacional - MOBILIZA',
+                vice: 'Grosso Da Oficina',
+                fotos:[
+                    {url:'MAUROGAGO.jpg', legenda: 'Prefeito'},
+                    {url:'zenilson.jpg', legenda: 'Vice-Prefeito', small: true}
+                ]
+            },
+            {
                 numero:'45',
                 nome:'EMILIA PESSOA',
                 partido:'PSDB',
