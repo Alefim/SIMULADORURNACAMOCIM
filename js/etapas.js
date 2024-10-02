@@ -664,7 +664,7 @@ let etapas = [
                 vice: 'Grosso Da Oficina',
                 fotos:[
                     {url:'MAUROGAGO.jpg', legenda: 'Prefeito'},
-                    {url:'zenilson.jpg', legenda: 'Vice-Prefeito', small: true}
+                    {url:'GROSSO.jpg', legenda: 'Vice-Prefeito', small: true}
                 ]
             },
             {
