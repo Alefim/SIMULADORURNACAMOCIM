@@ -657,13 +657,13 @@ let etapas = [
                 ]
             },
             {
-                numero:'33',
-                nome:'MAURO GAGO',
-                partido:'Mobilização Nacional - MOBILIZA',
-                vice: 'GROSSO DA OFICINA',
+                numero:'45',
+                nome:'EMILIA PESSOA',
+                partido:'PSDB',
+                vice: 'CELIA',
                 fotos:[
-                    {url:'MAURO GAGO.jpg', legenda: 'Prefeito'},
-                    {url:'GROSSO.jpg', legenda: 'Vice-Prefeito', small: true} 
+                    {url:'emilia.jpeg', legenda: 'Prefeito'},
+                    {url:'CELIA.jpg', legenda: 'Vice-Prefeito', small: true} 
                 ]
             }
 
