@@ -1,6 +1,6 @@
 let etapas = [
     {
-        titulo: 'VEREADOR',
+        titulo: 'DEPUTADO FEDERAL',
         numeros: 5,
         candidatos: [
             {
@@ -633,17 +633,17 @@ let etapas = [
 
 
 
-        titulo: 'PREFEITO',
-        numeros: 2,
+        titulo: 'DEPUTADO ESTADUAL',
+        numeros: 5,
         candidatos: [
             {
-                numero:'40',
-                nome:'BETINHA',
+                numero:'40888',
+                nome:'SÉRGIO AGUIAR',
                 partido:'Partido Socialista Brasileiro - PSB',
                 vice: 'MONICA AGUIAR',
                 fotos:[
-                    {url:'betinha.jpg', legenda: 'Prefeito'},
-                    {url:'vice.jpg', legenda: 'Vice-Prefeito', small: true}
+                    {url:'betinha.jpg', legenda: 'Deputado'},
+                   
                 ]
             },
             {
