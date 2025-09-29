@@ -698,11 +698,32 @@ let etapas = [
     {
         titulo: 'GOVERNADOR',
         numeros: 2,
-        candidatos: []
+        candidatos: [
+
+            {
+                numero:'40',
+                nome:'ELMANO DE FREITAS',
+                partido:'Partido dos Trabalhadores - PT',
+              fotos:[
+                    {url:'elmano.jpg', legenda: 'Governador'},
+                    ,{url:'geraldo.jpg', legenda: 'Vice-Presidente', small: true}
+                     ]
+            }
+        ]
     },
     {
         titulo: 'PRESIDENTE',
         numeros: 2,
-        candidatos: []
+        candidatos: [
+            {
+            numero:'13',
+            name:'LULA',
+            partido:'Partido dos Trabalhadores - PT',
+            vice: 'GERALDO ALCKMIN',
+            fotos:[{url:'lula.jpg', legenda: 'Presidente'},{url:'geraldo.jpg', legenda: 'Vice-Presidente', small: true}
+            ]
+        }
+
+        ]
     }
 ];
