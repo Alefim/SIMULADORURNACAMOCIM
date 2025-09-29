@@ -642,7 +642,7 @@ let etapas = [
                 partido:'Partido Socialista Brasileiro - PSB',
                 vice: 'MONICA AGUIAR',
                 fotos:[
-                    {url:'betinha.jpg', legenda: 'Deputado'},
+                    {url:'betinha.jpg', legenda: ''},
                    
                 ]
             },
@@ -680,5 +680,29 @@ let etapas = [
 
             
         ]
+    },
+    {
+        titulo: 'SENADOR',
+        numeros: 3,
+        candidatos: [
+            {
+                numero:'123',
+                nome:'CÍCERO SILVA',
+                partido:'Partido dos Trabalhadores - PT',
+              fotos:[
+                    {url:'cicero.jpg', legenda: 'Senador'},
+                     ] 
+            }
+        ]
+    },
+    {
+        titulo: 'GOVERNADOR',
+        numeros: 2,
+        candidatos: []
+    },
+    {
+        titulo: 'PRESIDENTE',
+        numeros: 2,
+        candidatos: []
     }
 ];
