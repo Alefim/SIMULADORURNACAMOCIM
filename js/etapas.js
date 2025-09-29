@@ -706,7 +706,7 @@ let etapas = [
                 partido:'Partido dos Trabalhadores - PT',
               fotos:[
                     {url:'elmano.jpg', legenda: 'Governador'},
-                    ,{url:'geraldo.jpg', legenda: 'Vice-Presidente', small: true}
+                    ,{url:'geraldo.jpg', legenda: 'Vice-Governador', small: true}
                      ]
             }
         ]
@@ -716,14 +716,17 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-            numero:'13',
-            nome:'LULA',
-            partido:'Partido dos Trabalhadores - PT',
-            vice: 'GERALDO ALCKMIN',
-            fotos:[{url:'lula.jpg', legenda: 'Presidente'},{url:'geraldo.jpg', legenda: 'Vice-Presidente', small: true}
-            ]
-        }
-
+                numero: '13',
+                nome: 'Lula',
+                partido: 'Partido dos Trabalhadores - PT',
+                vice: 'GERALDO ALCKMIN',
+                fotos: [
+                    { url: 'lula.jpg', legenda: 'Presidente' },
+                    { url: 'geraldo.jpg', legenda: 'Vice-Presidente', small: true }
+                ]
+            }
         ]
-    }
+    },
+    
+
 ];
