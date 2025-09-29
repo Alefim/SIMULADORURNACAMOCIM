@@ -717,7 +717,7 @@ let etapas = [
         candidatos: [
             {
             numero:'13',
-            name:'LULA',
+            nome:'LULA',
             partido:'Partido dos Trabalhadores - PT',
             vice: 'GERALDO ALCKMIN',
             fotos:[{url:'lula.jpg', legenda: 'Presidente'},{url:'geraldo.jpg', legenda: 'Vice-Presidente', small: true}
