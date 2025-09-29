@@ -1,7 +1,7 @@
 {
   "name": "Simulador de Urna Eletrônica",
   "short_name": "Urna",
-  "start_url": "index.html",
+  "start_url": "./",
   "display": "standalone",
   "orientation": "landscape",
   "theme_color": "#162633",
