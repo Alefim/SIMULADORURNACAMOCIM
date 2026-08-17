@@ -9,20 +9,22 @@ let etapaAtual = 0;
 let numero = '';
 let votoBranco = false;
 let votos = [];
+let simulacaoFinalizada = false;
 
 function comecarEtapa() {
+    if (simulacaoFinalizada) return;
+
     let etapa = etapas[etapaAtual];
+    if (!etapa) return;
 
     let numeroHTML = '';
     numero = '';
     votoBranco = false;
 
-    for(let i=0;i<etapa.numeros;i++) {
-        if(i ===0) {
-            numeroHTML += '<div class="numero pisca"></div>';
-        } else{
-            numeroHTML += '<div class="numero"></div>';
-        }    
+    for (let i = 0; i < etapa.numeros; i++) {
+        numeroHTML += i === 0
+            ? '<div class="numero pisca"></div>'
+            : '<div class="numero"></div>';
     }
 
     seuVotoPara.style.display = 'none';
@@ -32,63 +34,59 @@ function comecarEtapa() {
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHTML;
 }
-function atualizaInterface(){
+
+function atualizaInterface() {
     let etapa = etapas[etapaAtual];
-    let candidato = etapa.candidatos.filter((item)=>{
-        if(item.numero === numero) {
-            return true;
-        } else {
-            return false;
-        }
-    });
-    if(candidato.length > 0) {
-        candidato = candidato[0];
-        seuVotoPara.style.display = 'block';
-        aviso.style.display = 'block';
-        //descricao.innerHTML = 'Nome: ${candidato.nome}<br/>Partido: ${candidato.partido}';
-        descricao.innerHTML = 'Nome: '+candidato.nome+'<br/>'+'Partido: '+candidato.partido;
+    if (!etapa) return;
+
+    let candidato = etapa.candidatos.find((item) => item.numero === numero);
+
+    seuVotoPara.style.display = 'block';
+    aviso.style.display = 'block';
+
+    if (candidato) {
+        descricao.innerHTML = 'Nome: ' + candidato.nome + '<br/>Partido: ' + candidato.partido;
 
         let fotosHTML = '';
-        for(let i in candidato.fotos){
-            if(candidato.fotos[i].small) {
-                fotosHTML += '<div class="d-1-image small"> <img src="Images/'+candidato.fotos[i].url+'" alt="" />'+candidato.fotos[i].legenda+'</div>';
-            }else {
-                //fotosHTML += '<div class="d-1-image"> <img src="Images/${candidato.fotos[i].url}" alt="" />${candidato.fotos[i].legenda}</div>';
-                fotosHTML += '<div class="d-1-image"> <img src="Images/'+candidato.fotos[i].url+'" alt="" />'+candidato.fotos[i].legenda+'</div>';
+        for (let i in candidato.fotos) {
+            if (candidato.fotos[i].small) {
+                fotosHTML += '<div class="d-1-image small"><img src="Images/' + candidato.fotos[i].url + '" alt="" />' + candidato.fotos[i].legenda + '</div>';
+            } else {
+                fotosHTML += '<div class="d-1-image"><img src="Images/' + candidato.fotos[i].url + '" alt="" />' + candidato.fotos[i].legenda + '</div>';
             }
- 
         }
-
         lateral.innerHTML = fotosHTML;
-    }else {
-        seuVotoPara.style.display = 'block';
-        aviso.style.display = 'block';
+    } else {
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>';
+        lateral.innerHTML = '';
     }
 }
 
 function clicou(n) {
+    if (simulacaoFinalizada) return;
+
     let somNumeros = new Audio();
-    somNumeros.src = "audios/numeros.mp3";
+    somNumeros.src = 'audios/numeros.mp3';
     somNumeros.play();
 
     let elNumero = document.querySelector('.numero.pisca');
-    if(elNumero !== null) {
+    if (elNumero !== null) {
         elNumero.innerHTML = n;
-        //numero = '${numero}${n}';
-        numero = numero+n;
+        numero = numero + n;
 
-        //fazer com que o campo de número pisque e após preenchido passe para o proximo campo
         elNumero.classList.remove('pisca');
-        if( elNumero.nextElementSibling !== null){
+        if (elNumero.nextElementSibling !== null) {
             elNumero.nextElementSibling.classList.add('pisca');
         } else {
             atualizaInterface();
         }
     }
-} 
+}
+
 function branco() {
-    numero === ''
+    if (simulacaoFinalizada) return;
+
+    numero = '';
     votoBranco = true;
 
     seuVotoPara.style.display = 'block';
@@ -96,46 +94,68 @@ function branco() {
     numeros.innerHTML = '';
     descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
     lateral.innerHTML = '';
-
-    
 }
+
 function corrige() {
+    if (simulacaoFinalizada) return;
+
     let somCorrige = new Audio();
-    somCorrige.src = "audios/corrige.mp3";
+    somCorrige.src = 'audios/corrige.mp3';
     somCorrige.play();
     comecarEtapa();
 }
+
+async function finalizarSimulacao() {
+    simulacaoFinalizada = true;
+
+    const tela = document.querySelector('.tela');
+    tela.innerHTML = '<div class="aviso--gigante">FIM</div><div id="status-planilha" class="status-planilha">Salvando simulação...</div>';
+
+    const status = document.getElementById('status-planilha');
+
+    if (typeof window.salvarSimulacaoNaPlanilha !== 'function') {
+        status.textContent = 'Simulação finalizada. Módulo da planilha não carregado.';
+        return;
+    }
+
+    const resultado = await window.salvarSimulacaoNaPlanilha(votos);
+    status.textContent = resultado.mensagem;
+    status.classList.add(resultado.ok ? 'status-sucesso' : 'status-aviso');
+}
+
 function confirma() {
+    if (simulacaoFinalizada) return;
+
     let etapa = etapas[etapaAtual];
+    if (!etapa) return;
 
     let votoConfirmado = false;
-    let somConfirma = new Audio("audios/confirma.mp3");
+    let somConfirma = new Audio('audios/confirma.mp3');
 
-    if(votoBranco === true) {
+    if (votoBranco === true) {
         votoConfirmado = true;
         somConfirma.play();
 
         votos.push({
-            etapa: etapas[etapaAtual].titulo,
+            etapa: etapa.titulo,
             voto: 'branco'
         });
-    } else if(numero.length === etapa.numeros) {
+    } else if (numero.length === etapa.numeros) {
         votoConfirmado = true;
         somConfirma.play();
 
         votos.push({
-            etapa: etapas[etapaAtual].titulo,
+            etapa: etapa.titulo,
             voto: numero
         });
     }
 
-    if(votoConfirmado) {
+    if (votoConfirmado) {
         etapaAtual++;
-        if(etapas[etapaAtual] !== undefined) {
+        if (etapas[etapaAtual] !== undefined) {
             comecarEtapa();
         } else {
-            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
-            console.log(votos);
+            finalizarSimulacao();
         }
     }
 }
@@ -143,13 +163,13 @@ function confirma() {
 comecarEtapa();
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => {
-        console.log('ServiceWorker registrado com sucesso:', registration);
-      })
-      .catch((error) => {
-        console.log('Falha ao registrar o ServiceWorker:', error);
-      });
-  });
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('js/service-worker.js')
+            .then((registration) => {
+                console.log('ServiceWorker registrado com sucesso:', registration);
+            })
+            .catch((error) => {
+                console.log('Falha ao registrar o ServiceWorker:', error);
+            });
+    });
 }
