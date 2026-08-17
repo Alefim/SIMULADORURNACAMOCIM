@@ -1,0 +1,62 @@
+[
+  {
+    "bairro": "SÃO JOÃO - RODAGEM DO LAGO",
+    "ruas": ["Pedro Alvares Cabral","Rua dos Pássaros","Santa Rita I","Santa Rita II","Santa Terezinha","São José","São Paulo","Tabelião Mário Aguiar","Tranquedo Neves","Travessa Boa Vista","Travessa Boa Vista II","Travessa Santa Rita","Travessa Santa Terezinha","Travessa São João/Rua: João","Travessa São José","Travessa São Paulo","Travessa Vila Algusta","Travessa Vila Rodão"]
+  },
+  {
+    "bairro": "NOSSA SENHORA DE FATIMA",
+    "ruas": ["Alameda da Alegria","Alameda da Esperança","Alameda da Felicidade","Antonieta Prado","Antonio Florindo SDO","Bahia","Carlos Trévia","Carlos Veras - Gerardo Ximenes Soares","Codomínio JK","Curitiba","Dr. Raimundo Veras","Francisco das Chagas Oliveira","João Correia /Manoel Rosa","Manoel Pinheiro da Rocha","Maringá","Mário Mendonça","Mário Monteiro -Manoel de Sousa","Nova Iguaçu","Recife","Rodrigues Alves","Rua Ibiapina","Rua Novo Jardim","Santa Efigênia","Santo Antonio","São Sebastião","Travessa Bela Vista","Travessa Ibiapina","Travessa Mário Mendonça","União"]
+  },
+  {
+    "bairro": "TAPETE VERDE - COHAB",
+    "ruas": ["100","102","104","106","108","110","1º de Maio","Antonio Zeferino Veras","Dr Luiza Távora","Esperantina","Joaquim Rocha Veras","Santana","Travessa 1º de Maio I","Travessa 1º de Maio III","Travessa 1º de Maio VI","Travessa Aeroporto","Travessa V","Travessa VI","Travessa VII","Travessa Dr. João Tomé I","Travessa Dr. João Tomé II","Travessa Dr. João Tomé VI","Travessa N.S da Saúde","Travessa Siebra","Travessa Silvestre Fontenele","Rua L nova","Vila Lotérica"]
+  },
+  {
+    "bairro": "CRUZEIRO",
+    "ruas": ["Antº Zeferino Veras","Benjamim Constant","Buraco da Gia - (Vila Pati - República)","D. Pedro II","João Pessoa","Joaquim Távora","Marechal Deodoro","Marechal Floriano","Paissandú","Quintino Bocaiúva","República e Buraco da Gia - (Vila Pati)","Riachuelo","Rua da Paz","Rua Nova","RUA PROJETADA","Rui Barbosa","Travessa Joaquim Távora","Travessa Riachuelo","Travessa Sargento Fábio"]
+  },
+  {
+    "bairro": "CENTRO",
+    "ruas": ["24 de maio","Alcindo Rocha","Beira Mar","D. Pedro II","Dr. João Thomé","Engenheiro Privat","Gal Tibúrcio","Gal. Sampaio","Humaita","Independência","João Pessoa","Joaquim Távora","José de Alencar","José Maria Veras","Marechal Floriano","Paissandú","República","Riachuelo","Santos Dumont","Tiradentes","Zeferino Veras"]
+  },
+  {
+    "bairro": "ANTONIO MAGALHÃES E APOSSADOS",
+    "ruas": ["Alcantara","Antonio Magalhães","Bandeirantes","Benito Tavares","Campanário","Cariré","Carlos Tavares","Chaval","Coreaú","Crateus","Flecherinha","Forquinha","Fortaleza","Granja","Guaraciaba do Norte","Hidrolândia","Ipú","Ipueiras","Martinopole","Massapê","Meruoca","Moraújo","Perimetral","Santa Quitéria","São Benedito","São Carlos","Senador Sá","Sobral","Tianguá","Travessa Abel trav perimetral","Travessa Perimetral I","Travessa Perimetral II","Ubajara","Uruoca","Varjota","Viçosa"]
+  },
+  {
+    "bairro": "COQUEIROS",
+    "ruas": ["15 de novembro","24 de Maio","Antônio Lima","Bela Vista","Dr. Raimundo Veras","Esplanada do Porto","Flórida e Miolo","Fortaleza","General Tibúrcio","Rua Nova","Pantanal","Rua do Meio (Coqueiros II)","Vila Paraná"]
+  },
+  {
+    "bairro": "BRASILIA",
+    "ruas": ["Bandeirantes","Dr. Raimundo Veras","Humaitá","João Pessoa","Joaquim Távora","Paissandu","Perimetral","Riachuelo","Rua Nova","Santos Dumont","Travessa Duque de Caxias","Travessa João Pessoa","Travessa Joaquim Távora (Maguari)","Travessa Olavo Bilac","Travessa Paissandu","Travessa Perimentral","Travessa Raimundo Veras","Travessa Riachuelo","Vila Paraná"]
+  },
+  {
+    "bairro": "BOA ESPERANÇA",
+    "ruas": ["Amapá","Amazonas","Antônio Zeferino Veras","Bahia","Bandeirantes","Belém","Belo Horizonte","Castro Alves","Ceará","Central","Curitiba","Diamantina","Goiás","Nilo Cordeiro","Niterói","Padre Cícero","Palestina","Parnaíba","Paraná","Perimetral","Princesa Diana","Princesa Izabel","Recife","Rita Aguiar e Trav. Esperantina","São Basílio","São Carlos","São João","São Luis","Sergipe","Tancredo Neves","Travessa Diamantina","Travessa Padre Cícero","Travessa Rita Aguiar","Vanderilo Torquato","Zé Carioca"]
+  },
+  {
+    "bairro": "SÃO PEDRO - PRAIA",
+    "ruas": ["24 de Maio","Arraial dos Santos","Av Beira Mar","Benjamin Constant","Estados Unidos","Estrada dos posteres","Estrada Mari Lago","General Sampaio","Humaitá","José Maria Veras","Marechal Deodoro","Paissandú","Pedro Alvares Cabral","Praia das Barreiras","Quintino Bocaiuva","Rua da Paz","Rua SDO","Rui Barbosa","Santos Dumont","São Francisco","São Francisco/Travessa","São Paulo/Travessa","Siqueira Campos/Travessa","Travessa São Pedro"]
+  },
+  {
+    "bairro": "JARDIM DAS OLIVEIRAS - CIDADE C",
+    "ruas": ["Airton Sena","Alexandre Roseno","Barrinha","Cesár Cals","Edvan Dutra","Ibiapina","José Bernardino Melo","José Euclides","Kleber Pessoa Veras","Maceio","Manoel Alves","Monsenhor Inácio","Raimundo Carls","Santana I - Joaquim Rocha Veras","Santana II","Sebastião Lopes II","Travessa Aeroporto","Travessa Ibiapina","Travessa Manoel Alves","Travessa São Pedro","Ubirajara","Vicente Veras","Xavier","Antono Margalhões","Sebastião Lopes I"]
+  },
+  {
+    "bairro": "ZONA RURAL I",
+    "ruas": ["Aborrecido","Água Branca","Aguapé","Aguapé Vila do Cemitério","Alvorada","Amarelas","Assentamento Jatobá","Barrinha","Boqueirão do Adroaldo","Boqueirão dos Dourados","Boqueirão dos Liras","Boqueirão dos Rosas","Boqueirão dos Xavier","Cacimbão","Cafundó","Cafundó - Silmara","Cafundó Px a Escola","Cangalhas","Cangalhas - Pé do Morro","Carnaúba Furada","Cedro","Cedro - Timbaúba","Estreito","Jacarandá","Jacarandá II","Jatobá","Jatobá Ciriáco","João Lopes","Lucilândia","Maceió (Área do novo Calcadão)","Maceió (Entrada 1-39)","Maceió (Ruas Novas 1-44)","Maceió Rua do Meio","Marico","Mororó","Olho D´ Água","Palmares","Pedra Branca","Pereiro","Pereiro 2","Santa Maria","Seiscentas","Tabocal I","Tabocal II","Tamboril I","Timbauba","Tucunzal","CUPIM","ANGELIM","FAZENDINHA","AÇUDINHO MORRO VERMELO","BAIXA GRANDE","FLAMENGA DO VITORIANO","FLAMENGA DOS FERREIRAS","FLAMENGA DO MAJOR","FLMENGA DOS FERREIRAS","FELIPE","MONTEVIDEO","MORRO VERMELHO","FLAMENGA DOS ROSARIOS","PRAIA DO XAVIER","MADEIRA CORTADA","TAPUIO","TAPUIU","SEISCENTA","TAMBORIL","PRATIU","RUA DO ROMILO (KMS)","BECO DO ROMILO 1 (KMS)","BECO DO ROMILO 2 (KMS)","BECO DO BRASILEIRO 1 (KMS)","BECO DO BRASILEIRO 2 (KMS)","BECO DO BRASILEIRO 3 (KMS)","BECO DO TOMÁZ (KMS)","BECO DO XIQUEZA (KMS)","BECO DA DAS DORES 1 (KMS)","BECO DA DAS DORES 2 (KMS)","RUA CENTRAL LADO DIR (KMS)","RUA CENTRAL LADO ESQ (KMS)","BECO DA ESCOLA (KMS)"]
+  },
+  {
+    "bairro": "ZONA RURAL II",
+    "ruas": ["1- PESQUEIRO","2- MORADA NOVA","3- BRACINHO","4- PEDRA BRANCA","5- FAZENDINHA","6- LAGOA DO MATO","7- TUCUNS","8- CANOÉ","9- VIOLETE","10- CHICO BOI","11- CÓRREGO GRANDE","12- SOBRADINHO","13- CARROS","14- CORGUINHO","15- CÓRREGO DO BRAÇO","16- BAIXO","17- BAIXINHA","18- GURIÚ 2ª visista aos indecisos + 1 rua que faltava fazer","19- BAIXA GRANDE (AINDA NÃO REALIZADO)","20- GROSSOS","21- DUAS BOCAS","22- BARRA DO LIMÃO","23- LAGOA CUMPRIDA","24- DIZIMEIRO","25- COMUNIDADE DO RIACHO","26- LAGOA DAS PEDRAS","27- CÓRREGO DE DENTRO","28- BOA ESPERANÇA","29- SÍTIO SÃO MATEUS","30- UMBURANA","31- METADE DO OLHO DÁGUA","32- URTIGA","33- METADE DO OLHO D`ÀGUA","34- PAPAGAIO","35- MORÉIAS","36- PÉ DO MORRO DAS MORÉIAS","38- TORTA","39- MARIANO","40- CAJAZEIRAS","41- INGAZEIRAS","42- PÉ DO MORRO DA TORTA","43- CÓRREGO DA PASSAGEM","44- VILA NOVA / VILA SÃO FRANCISCO","45- TATAJUBA","46- BAIXA DA TATAJUBA (FALTAM CASAS)","47- BURITI","48- MURUJUBA","49- CÓRREGO DO BURITI","50- FRECHEIRAS","51- COITÉ","52- LAGO GRANDE PARTRE 1 FRAN","53 - LAGO GRANDE PARTE 2 SITONIA","54 - BEBEDOURO"]
+  },
+  {
+    "bairro": "BONITO III",
+    "ruas": ["A","B","C","D"]
+  },
+  {
+    "bairro": "OLINDA",
+    "ruas": ["Antonio Zeferino Veras","Aracati","Eduardo Brito","Favelinha","Gentil Barreto","Iguatu","Imperatriz","José Pinheiro","José Porto Cavalcante","Juazeiro I","Juazeiro II","Km 02","Migueira Braga","Moises Cavalcante","Moraújo","Nossa Senhora das Graças - (Rua Grande)","Nossa Senhora das Graças II","Olavo Bilac","Olinda II","Quadra A","Quadra B","Quadra C","Quadra D","Quadra E","Quadra F","Quadra G","Quixadá","Rua A","Rua B","Rua C","Rua D","Rua E","Tenente Teles","Travessa João Pessoa","Ubajara","Via Local I","Via Local II","Virgilio Távora","Zeferino Veras - célia betinha libório"]
+  }
+]
