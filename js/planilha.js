@@ -16,16 +16,36 @@ function detalharVotosSimulados(votos) {
 
 function montarRegistroSimulacao(votos) {
   const contexto = window.simulacaoContexto || {};
+  const votosDetalhados = detalharVotosSimulados(votos);
+
+  // Compatibilidade com a implantação atual do Apps Script:
+  // Nome e Observações também seguem como colunas dinâmicas dentro de votos.
+  const camposComplementares = [
+    {
+      etapa: 'Nome',
+      voto: '',
+      candidato: contexto.nome || '',
+      partido: ''
+    },
+    {
+      etapa: 'Observações',
+      voto: '',
+      candidato: contexto.observacoes || '',
+      partido: ''
+    }
+  ];
 
   return {
     tipo: 'SIMULACAO_FICTICIA',
     simulacaoId: contexto.simulacaoId || '',
+    nome: contexto.nome || '',
     bairro: contexto.bairro || '',
     rua: contexto.rua || '',
     numeroCasa: contexto.numeroCasa || '',
+    observacoes: contexto.observacoes || '',
     iniciadaEm: contexto.iniciadaEm || '',
     finalizadaEm: new Date().toISOString(),
-    votos: detalharVotosSimulados(votos)
+    votos: votosDetalhados.concat(camposComplementares)
   };
 }
 
