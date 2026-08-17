@@ -2,9 +2,11 @@ const TERRITORIOS_URL = 'data/territorios.json';
 
 const painelEndereco = document.getElementById('painel-endereco');
 const simulador = document.getElementById('simulador');
+const nomeInput = document.getElementById('nome');
 const bairroSelect = document.getElementById('bairro');
 const ruaSelect = document.getElementById('rua');
 const numeroCasaInput = document.getElementById('numero-casa');
+const observacoesInput = document.getElementById('observacoes');
 const iniciarBtn = document.getElementById('iniciar-simulacao');
 const enderecoStatus = document.getElementById('endereco-status');
 const enderecoSelecionado = document.getElementById('endereco-selecionado');
@@ -36,7 +38,7 @@ async function carregarTerritorios() {
         });
 
         bairroSelect.disabled = false;
-        enderecoStatus.textContent = 'Selecione o bairro, a rua e informe um número de casa fictício.';
+        enderecoStatus.textContent = 'Informe um nome fictício, selecione bairro e rua e digite um número de casa fictício.';
     } catch (erro) {
         console.error(erro);
         enderecoStatus.textContent = 'Não foi possível carregar a lista de bairros e ruas.';
@@ -61,12 +63,14 @@ bairroSelect.addEventListener('change', () => {
 });
 
 iniciarBtn.addEventListener('click', () => {
+    const nome = nomeInput.value.trim();
     const bairroValido = bairroSelect.value !== '';
     const ruaValida = ruaSelect.value !== '';
     const numeroCasa = numeroCasaInput.value.trim();
+    const observacoes = observacoesInput.value.trim();
 
-    if (!bairroValido || !ruaValida || !numeroCasa) {
-        enderecoStatus.textContent = 'Preencha bairro, rua e número fictício da casa para iniciar.';
+    if (!nome || !bairroValido || !ruaValida || !numeroCasa) {
+        enderecoStatus.textContent = 'Preencha nome fictício, bairro, rua e número fictício da casa para iniciar.';
         return;
     }
 
@@ -74,14 +78,16 @@ iniciarBtn.addEventListener('click', () => {
 
     window.simulacaoContexto = {
         simulacaoId: gerarIdSimulacao(),
+        nome: nome,
         bairro: territorio.bairro,
         rua: ruaSelect.value,
         numeroCasa: numeroCasa,
+        observacoes: observacoes,
         iniciadaEm: new Date().toISOString()
     };
 
     enderecoSelecionado.textContent =
-        'Simulação: ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
+        'Participante fictício: ' + nome + ' • ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
 
     painelEndereco.hidden = true;
     simulador.hidden = false;
