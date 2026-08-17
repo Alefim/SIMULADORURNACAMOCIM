@@ -1,4 +1,4 @@
-const TERRITORIOS_URL = 'https://raw.githubusercontent.com/Alefim/VISITAS-CAMPO-CAMOCIM-ELEI-ES-2026/main/app/data/territorios.json';
+const TERRITORIOS_URL = 'data/territorios.json';
 
 const painelEndereco = document.getElementById('painel-endereco');
 const simulador = document.getElementById('simulador');
@@ -7,8 +7,18 @@ const ruaSelect = document.getElementById('rua');
 const numeroCasaInput = document.getElementById('numero-casa');
 const iniciarBtn = document.getElementById('iniciar-simulacao');
 const enderecoStatus = document.getElementById('endereco-status');
+const enderecoSelecionado = document.getElementById('endereco-selecionado');
 
 let territorios = [];
+window.simulacaoContexto = null;
+
+function gerarIdSimulacao() {
+    if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+        return window.crypto.randomUUID();
+    }
+
+    return 'SIM-' + Date.now() + '-' + Math.random().toString(16).slice(2);
+}
 
 async function carregarTerritorios() {
     try {
@@ -26,7 +36,7 @@ async function carregarTerritorios() {
         });
 
         bairroSelect.disabled = false;
-        enderecoStatus.textContent = 'Selecione o bairro, a rua e informe o número da casa.';
+        enderecoStatus.textContent = 'Selecione o bairro, a rua e informe um número de casa fictício.';
     } catch (erro) {
         console.error(erro);
         enderecoStatus.textContent = 'Não foi possível carregar a lista de bairros e ruas.';
@@ -53,16 +63,26 @@ bairroSelect.addEventListener('change', () => {
 iniciarBtn.addEventListener('click', () => {
     const bairroValido = bairroSelect.value !== '';
     const ruaValida = ruaSelect.value !== '';
-    const numeroValido = numeroCasaInput.value.trim() !== '';
+    const numeroCasa = numeroCasaInput.value.trim();
 
-    if (!bairroValido || !ruaValida || !numeroValido) {
-        enderecoStatus.textContent = 'Preencha bairro, rua e número da casa para iniciar.';
+    if (!bairroValido || !ruaValida || !numeroCasa) {
+        enderecoStatus.textContent = 'Preencha bairro, rua e número fictício da casa para iniciar.';
         return;
     }
 
-    // O endereço serve somente para organizar o acesso à simulação.
-    // Não é anexado aos votos nem salvo no navegador.
-    numeroCasaInput.value = '';
+    const territorio = territorios[Number(bairroSelect.value)];
+
+    window.simulacaoContexto = {
+        simulacaoId: gerarIdSimulacao(),
+        bairro: territorio.bairro,
+        rua: ruaSelect.value,
+        numeroCasa: numeroCasa,
+        iniciadaEm: new Date().toISOString()
+    };
+
+    enderecoSelecionado.textContent =
+        'Simulação: ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
+
     painelEndereco.hidden = true;
     simulador.hidden = false;
     window.scrollTo({ top: 0, behavior: 'smooth' });
