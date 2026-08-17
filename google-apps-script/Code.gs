@@ -14,9 +14,11 @@ function doPost(e) {
     const colunasBase = [
       'ID Simulação',
       'Data/Hora',
+      'Nome',
       'Bairro',
       'Rua',
       'Número da Casa',
+      'Observações',
       'Tipo'
     ];
 
@@ -60,9 +62,11 @@ function doPost(e) {
     const valoresBase = {
       'ID Simulação': dados.simulacaoId || '',
       'Data/Hora': dados.finalizadaEm || new Date().toISOString(),
+      'Nome': dados.nome || '',
       'Bairro': dados.bairro || '',
       'Rua': dados.rua || '',
       'Número da Casa': dados.numeroCasa || '',
+      'Observações': dados.observacoes || '',
       'Tipo': dados.tipo || 'SIMULACAO_FICTICIA'
     };
 
