@@ -1,3 +1,3 @@
 window.SIMULADOR_CONFIG = {
-  googleSheetsWebAppUrl: 'https://script.google.com/macros/s/AKfycbxTEBLMW8IgxokATrCfe3pjaJv8kXu9_MWtsDP5x-ne3NzS0v-RrB39KLAgoPt-VfO70A/exec'
+  googleSheetsWebAppUrl: 'https://script.google.com/macros/s/AKfycby638kBkpzhMgEYa0Tj784lbCFucj8q6AwNVaKnZu1XC8O0tUEiJ4JNIZ_rU6_UfP47tw/exec'
 };
