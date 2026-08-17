@@ -19,9 +19,14 @@
     <section id="painel-endereco" class="endereco-card">
         <div class="simulacao-selo">SIMULAÇÃO FICTÍCIA</div>
         <h1>Iniciar simulação</h1>
-        <p class="endereco-intro">Escolha o bairro, a rua e informe um número de casa fictício antes de iniciar a urna.</p>
+        <p class="endereco-intro">Informe um nome fictício, escolha o bairro e a rua, digite um número de casa fictício e, se desejar, acrescente observações.</p>
 
         <div class="endereco-grid">
+            <label>
+                Nome fictício
+                <input id="nome" type="text" maxlength="100" placeholder="Ex.: Participante 01" autocomplete="off">
+            </label>
+
             <label>
                 Bairro
                 <select id="bairro" disabled>
@@ -40,11 +45,16 @@
                 Número da casa
                 <input id="numero-casa" type="text" inputmode="numeric" maxlength="12" placeholder="Ex.: 125" autocomplete="off">
             </label>
+
+            <label>
+                Observações <span class="campo-opcional">(opcional)</span>
+                <textarea id="observacoes" maxlength="500" rows="4" placeholder="Digite alguma observação sobre esta simulação..."></textarea>
+            </label>
         </div>
 
         <button id="iniciar-simulacao" class="botao-iniciar" type="button">Iniciar simulação</button>
         <p id="endereco-status" class="endereco-status">Carregando bairros e ruas...</p>
-        <p class="aviso-ficticio">Use somente dados fictícios ou de treinamento. O endereço informado será associado apenas a esta simulação.</p>
+        <p class="aviso-ficticio">Use somente nomes, endereços e informações fictícias ou de treinamento. Os dados serão associados apenas a esta simulação fictícia.</p>
     </section>
 
     <main id="simulador" hidden>
