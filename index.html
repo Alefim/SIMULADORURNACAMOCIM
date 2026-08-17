@@ -1,114 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Urna Eletrônica</title>
-        <meta name="description" content="Simulador de Urna Eletrônica">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">        
-        <link rel="manifest" href="manifest.json">
-    
-        <!-- Adicionar à tela inicial do Chrome no Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="Images/urna.png">
-        <meta name="theme-color" content="#162633">
-    
-        <!-- Adicionar à tela inicial do Safari no iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="Urna">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="apple-touch-icon-precomposed" href="Images/urna.png">
-    
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="Images/urna.png">
-        <meta name="msapplication-TileColor" content="#162633">
-    
-        <script>
-        if (window.location.protocol != "https:" && window.location.hostname == "https://alefim.github.io/SIMULADORURNACAMOCIM/")
-            window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-        </script>
-    </head>
-    <body>
-        
-            <div class="titulo"><h1>Simulador de Urna Eletrônica</h1></div>
-            <div class="urna">
-                <div class="tela">
-                    <div class="d-1">
-                        <div class="d-1-left">
-                            <div class="d-1-1">
-                                <span>SEU VOTO PARA</span>
-                            </div>
-                            <div class="d-1-2">
-                                <span>Presidente</span>
-                            </div>
-                            <div class="d-1-3">
-                                <div class="numero pisca"></div>
-                                <div class="numero"></div>
-                            </div>
-                            <div class="d-1-4">
-                                Nome: FULANO<br/>
-                                Partido: NOVO<br/>
-                                Vice-Presidente: BELTRANO<br/>
-                            </div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Urna - Camocim</title>
+    <meta name="description" content="Simulador fictício de urna eletrônica">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#162633">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Urna">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" sizes="192x192" href="Images/urna.png">
+    <link rel="apple-touch-icon-precomposed" href="Images/urna.png">
+</head>
+<body>
+    <section id="painel-endereco" class="endereco-card">
+        <div class="simulacao-selo">SIMULAÇÃO FICTÍCIA</div>
+        <h1>Iniciar simulação</h1>
+        <p class="endereco-intro">Escolha o bairro, a rua e informe um número de casa fictício antes de iniciar a urna.</p>
+
+        <div class="endereco-grid">
+            <label>
+                Bairro
+                <select id="bairro" disabled>
+                    <option value="">Carregando bairros...</option>
+                </select>
+            </label>
+
+            <label>
+                Rua / localidade
+                <select id="rua" disabled>
+                    <option value="">Selecione primeiro o bairro</option>
+                </select>
+            </label>
+
+            <label>
+                Número da casa
+                <input id="numero-casa" type="text" inputmode="numeric" maxlength="12" placeholder="Ex.: 125" autocomplete="off">
+            </label>
+        </div>
+
+        <button id="iniciar-simulacao" class="botao-iniciar" type="button">Iniciar simulação</button>
+        <p id="endereco-status" class="endereco-status">Carregando bairros e ruas...</p>
+        <p class="aviso-ficticio">Use somente dados fictícios ou de treinamento. O endereço informado será associado apenas a esta simulação.</p>
+    </section>
+
+    <main id="simulador" hidden>
+        <div class="titulo"><h1>Simulador de Urna Eletrônica</h1></div>
+        <div id="endereco-selecionado" class="endereco-selecionado"></div>
+
+        <div class="urna">
+            <div class="tela">
+                <div class="d-1">
+                    <div class="d-1-left">
+                        <div class="d-1-1"><span>SEU VOTO PARA</span></div>
+                        <div class="d-1-2"><span>Presidente</span></div>
+                        <div class="d-1-3">
+                            <div class="numero pisca"></div>
+                            <div class="numero"></div>
                         </div>
-                        <div class="d-1-right">
-                            <div class="d-1-image">
-                                <img src="Images/hagar.PNG" alt="" />
-                                Prefeito
-                            </div>
-                            <div class="d-1-image small">
-                                <img src="Images/guy.PNG" alt="" />
-                                Vice-Prefeito
-                            </div>
-                        </div>
+                        <div class="d-1-4"></div>
                     </div>
-                    <div class="d-2">
-                        Aperte a tela: <br/>
-                        CONFIRMA para CONFIRMAR este voto<br/>
-                        CORRIGE para CORRIGIR este voto
-                    </div>
+                    <div class="d-1-right"></div>
                 </div>
-                <div class="esquerda">
-                    <div class="topo-esquerda"> 
-                        <div class="logo"> <img src="Images/brasao.png" alt="" /> </div>
-                        <div class="Justica-eleitoral">JUSTIÇA<br/>ELEITORAL</div>
-                    </div>
-                    <div class="teclado">
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('1')">1</div>
-                            <div class="teclado--botao" onclick="clicou('2')">2</div>
-                            <div class="teclado--botao" onclick="clicou('3')">3</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('4')">4</div>
-                            <div class="teclado--botao" onclick="clicou('5')">5</div>
-                            <div class="teclado--botao" onclick="clicou('6')">6</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('7')">7</div>
-                            <div class="teclado--botao" onclick="clicou('8')">8</div>
-                            <div class="teclado--botao" onclick="clicou('9')">9</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao" onclick="clicou('0')">0</div>
-                        </div>
-                        <div class="teclado--linha">
-                            <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
-                            <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
-                            <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
-                        </div>
-                    </div>
-                </div>            
+                <div class="d-2">
+                    Aperte a tela:<br>
+                    CONFIRMA para CONFIRMAR este voto<br>
+                    CORRIGE para CORRIGIR este voto
+                </div>
             </div>
 
-            <h2><a href="index.html" target="_self"><strong>Simular de Novo</strong></a></h2>
-        
-            <script src="js/etapas.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/service-worker.js"></script>
-            <script src="js/install.js"></script>
-            <br>
-    <p aling="left"><b>Criador:</b> Álefim Oliveira Silva</p>
-    <H4>Bacharelado em Ciência da Computação - UVA/CE Analista e Subdesenvolvedor de Sistemas - Unopar - IFCE</H4>
-    </body>    
+            <div class="esquerda">
+                <div class="topo-esquerda">
+                    <div class="logo"><img src="Images/brasao.png" alt="Brasão"></div>
+                    <div class="Justica-eleitoral">JUSTIÇA<br>ELEITORAL</div>
+                </div>
+
+                <div class="teclado">
+                    <div class="teclado--linha">
+                        <div class="teclado--botao" onclick="clicou('1')">1</div>
+                        <div class="teclado--botao" onclick="clicou('2')">2</div>
+                        <div class="teclado--botao" onclick="clicou('3')">3</div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao" onclick="clicou('4')">4</div>
+                        <div class="teclado--botao" onclick="clicou('5')">5</div>
+                        <div class="teclado--botao" onclick="clicou('6')">6</div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao" onclick="clicou('7')">7</div>
+                        <div class="teclado--botao" onclick="clicou('8')">8</div>
+                        <div class="teclado--botao" onclick="clicou('9')">9</div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao" onclick="clicou('0')">0</div>
+                    </div>
+                    <div class="teclado--linha">
+                        <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
+                        <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
+                        <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2><a href="index.html" target="_self"><strong>Simular de Novo</strong></a></h2>
+    </main>
+
+    <footer class="rodape">
+        <p><strong>Criador:</strong> Álefim Oliveira Silva</p>
+        <p>Bacharelado em Ciência da Computação - UVA/CE • Analista e Subdesenvolvedor de Sistemas - Unopar - IFCE</p>
+    </footer>
+
+    <script src="js/etapas.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/planilha.js"></script>
+    <script src="js/endereco.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/service-worker.js"></script>
+    <script src="js/install.js"></script>
+</body>
 </html>
