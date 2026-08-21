@@ -15,14 +15,25 @@
 body {
     margin: 0;
     min-height: 100vh;
-    padding: 28px 16px;
+    padding: 28px 16px calc(78px + env(safe-area-inset-bottom));
     background: #f1f4f6;
     color: #17212b;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+.teclado--botao {
+    touch-action: manipulation;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
 }
 
 .endereco-card {
-    width: min(680px, 100%);
+    width: min(720px, 100%);
     margin: 36px auto;
     padding: 32px;
     background: #ffffff;
@@ -30,25 +41,63 @@ body {
     box-shadow: 0 16px 45px rgba(22, 38, 51, 0.15);
 }
 
+.cabecalho-simulacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
 .endereco-card h1 {
     margin: 12px 0 8px;
     font-size: 32px;
 }
 
-.simulacao-selo {
-    display: inline-block;
+.simulacao-selo,
+.conexao-status {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
     padding: 7px 12px;
     border-radius: 999px;
-    background: #e7f0ff;
-    color: #174ea6;
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
+}
+
+.simulacao-selo {
+    background: #e7f0ff;
+    color: #174ea6;
+}
+
+.conexao-status {
+    background: #edf1f4;
+    color: #52606d;
+}
+
+.conexao-status::before {
+    width: 8px;
+    height: 8px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    content: '';
+}
+
+.conexao-status.esta-online {
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+
+.conexao-status.esta-offline {
+    background: #fff3e0;
+    color: #8a4b00;
 }
 
 .endereco-intro,
 .endereco-status,
-.aviso-ficticio {
+.aviso-ficticio,
+.dados-status {
     line-height: 1.5;
 }
 
@@ -74,8 +123,8 @@ body {
 .endereco-grid input,
 .endereco-grid textarea {
     width: 100%;
-    min-height: 48px;
-    padding: 10px 12px;
+    min-height: 50px;
+    padding: 11px 13px;
     border: 1px solid #b8c2cc;
     border-radius: 10px;
     background: #ffffff;
@@ -90,30 +139,89 @@ body {
 
 .endereco-grid select:focus,
 .endereco-grid input:focus,
+.endereco-grid textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(23, 78, 166, 0.25);
+    outline-offset: 2px;
+}
+
+.endereco-grid select:focus,
+.endereco-grid input:focus,
 .endereco-grid textarea:focus {
-    outline: 3px solid rgba(23, 78, 166, 0.16);
     border-color: #174ea6;
 }
 
-.botao-iniciar {
-    width: 100%;
+.botao-iniciar,
+.botao-secundario {
     min-height: 50px;
-    border: 0;
     border-radius: 10px;
-    background: #162633;
-    color: #ffffff;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
 }
 
-.botao-iniciar:hover {
+.botao-iniciar {
+    width: 100%;
+    border: 0;
+    background: #162633;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.botao-iniciar:hover,
+.botao-secundario:hover:not(:disabled) {
     filter: brightness(1.08);
 }
 
 .endereco-status {
     margin: 14px 0 0;
     color: #52606d;
+}
+
+.painel-dados {
+    margin-top: 24px;
+    padding: 18px;
+    border: 1px solid #c8d2dc;
+    border-radius: 14px;
+    background: #f8fafb;
+}
+
+.painel-dados h2 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.painel-dados p {
+    margin: 0;
+}
+
+.acoes-dados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botao-secundario {
+    border: 1px solid #162633;
+    padding: 10px 14px;
+    background: #ffffff;
+    color: #162633;
+}
+
+.dados-status {
+    margin-top: 12px !important;
+    color: #52606d;
+    font-size: 13px;
+}
+
+.status-sucesso {
+    color: #1b5e20 !important;
+}
+
+.status-aviso {
+    color: #8a4b00 !important;
 }
 
 .aviso-ficticio {
@@ -123,6 +231,22 @@ body {
     background: #f4f8ff;
     color: #405166;
     font-size: 13px;
+}
+
+.botao-atualizar {
+    position: fixed;
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
+    z-index: 99999;
+    min-height: 48px;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    background: #52606d;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
 }
 
 #simulador {
@@ -269,12 +393,26 @@ body {
     font-size: 14px;
 }
 
-.status-sucesso {
-    color: #1b5e20;
+.acoes-finalizacao {
+    padding: 0 16px 18px;
+    text-align: center;
 }
 
-.status-aviso {
-    color: #8a4b00;
+.botao-exportar-final {
+    width: min(320px, 100%);
+    min-height: 50px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 16px;
+    background: #174ea6;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-exportar-final:hover:not(:disabled) {
+    filter: brightness(1.08);
 }
 
 .esquerda {
@@ -317,16 +455,22 @@ body {
 
 .teclado--botao {
     width: 70px;
-    height: 40px;
+    height: 46px;
     background-color: #000;
     color: #fff;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 7px;
+    margin: 6px;
     cursor: pointer;
+    user-select: none;
     box-shadow: 3px 3px 0 #555;
+}
+
+.teclado--botao:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #555;
 }
 
 .botao--branco,
@@ -347,7 +491,7 @@ body {
 .botao--confirma {
     background-color: #48c079;
     width: 90px;
-    height: 50px;
+    height: 54px;
 }
 
 .rodape {
@@ -360,7 +504,7 @@ body {
 
 @media (max-width: 900px) {
     body {
-        padding: 18px 10px;
+        padding: 18px 10px calc(78px + env(safe-area-inset-bottom));
     }
 
     .urna {
@@ -382,8 +526,16 @@ body {
         border-radius: 14px;
     }
 
+    .cabecalho-simulacao {
+        align-items: flex-start;
+    }
+
     .endereco-card h1 {
         font-size: 26px;
+    }
+
+    .acoes-dados {
+        grid-template-columns: 1fr;
     }
 
     .urna {
@@ -421,5 +573,11 @@ body {
 
     .botao--confirma {
         width: 82px;
+    }
+
+    .botao-atualizar {
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
     }
 }
