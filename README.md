@@ -2,6 +2,13 @@
 
 Simulador fictício de urna eletrônica, preparado para funcionar como aplicativo instalável (PWA) em tablet, inclusive sem internet.
 
+## Cargos e candidatos cadastrados
+
+- **Deputado Estadual:** Sérgio Aguiar (40888), Romeu Aldigueri (40777) e Euvaldete Ferro (45455).
+- **Deputado Federal:** Roger Aguiar (4044) e Tainah Marinho (4077).
+
+A urna encerra a simulação após os votos para esses dois cargos.
+
 ## O que funciona offline
 
 - tela de endereço e votação;
