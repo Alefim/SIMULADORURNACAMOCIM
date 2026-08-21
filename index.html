@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Simulador de Urna - Camocim</title>
-    <meta name="description" content="Simulador fictício de urna eletrônica">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css?v=20260817-2024">
+    <meta name="description" content="Simulador fictício de urna eletrônica com funcionamento offline e exportação CSV">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="css/style.css?v=20260821-1">
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#162633">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Urna">
+    <meta name="apple-mobile-web-app-title" content="Urna Camocim">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" sizes="192x192" href="Images/urna.png">
-    <link rel="apple-touch-icon-precomposed" href="Images/urna.png">
+    <link rel="icon" href="Images/urna.png">
+    <link rel="apple-touch-icon" href="Images/urna.png">
 </head>
 <body>
     <section id="painel-endereco" class="endereco-card">
-        <div class="simulacao-selo">SIMULAÇÃO FICTÍCIA</div>
+        <div class="cabecalho-simulacao">
+            <div class="simulacao-selo">SIMULAÇÃO FICTÍCIA</div>
+            <span id="conexao-status" class="conexao-status" aria-live="polite">Verificando conexão...</span>
+        </div>
+
         <h1>Iniciar simulação</h1>
-        <p class="endereco-intro">Informe um nome fictício, escolha o bairro e a rua, digite um número de casa fictício e, se desejar, acrescente observações.</p>
+        <p class="endereco-intro">Informe um nome fictício, escolha o bairro e a rua, digite um número de casa fictício e, se desejar, acrescente observações. A simulação será gravada neste tablet, mesmo sem internet.</p>
 
         <div class="endereco-grid">
             <label>
@@ -55,10 +59,24 @@
         <button id="iniciar-simulacao" class="botao-iniciar" type="button">Iniciar simulação</button>
         <p id="cache-status" class="endereco-status" hidden></p>
         <p id="endereco-status" class="endereco-status">Carregando bairros e ruas...</p>
-        <p class="aviso-ficticio">Use somente nomes, endereços e informações fictícias ou de treinamento. Os dados serão associados apenas a esta simulação fictícia.</p>
+
+        <section class="painel-dados" aria-labelledby="titulo-dados-locais">
+            <div>
+                <h2 id="titulo-dados-locais">Dados salvos no tablet</h2>
+                <p id="registros-resumo">Carregando registros locais...</p>
+            </div>
+            <div class="acoes-dados">
+                <button id="exportar-csv" class="botao-secundario" type="button" disabled>Baixar arquivo CSV</button>
+                <button id="sincronizar-pendentes" class="botao-secundario" type="button" disabled>Sincronizar agora</button>
+                <button id="instalar-app" class="botao-secundario" type="button" hidden>Instalar no tablet</button>
+            </div>
+            <p id="dados-status" class="dados-status" aria-live="polite">O CSV pode ser aberto no Excel ou importado no Google Planilhas.</p>
+        </section>
+
+        <p class="aviso-ficticio">Use somente nomes, endereços e informações fictícias ou de treinamento. Os dados ficam armazenados neste dispositivo e só são enviados quando houver conexão.</p>
     </section>
 
-    <button id="limpar-cache" type="button" style="position:fixed;right:14px;bottom:14px;z-index:99999;border:0;border-radius:10px;padding:12px 16px;background:#52606d;color:#fff;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22);">Limpar cache</button>
+    <button id="limpar-cache" class="botao-atualizar" type="button">Atualizar aplicativo</button>
 
     <main id="simulador" hidden>
         <div class="titulo"><h1>Simulador de Urna Eletrônica</h1></div>
@@ -119,7 +137,7 @@
             </div>
         </div>
 
-        <h2><a href="index.html" target="_self"><strong>Simular de Novo</strong></a></h2>
+        <h2><a href="index.html" target="_self"><strong>Simular de novo / Exportar CSV</strong></a></h2>
     </main>
 
     <footer class="rodape">
@@ -127,11 +145,11 @@
         <p>Bacharelado em Ciência da Computação - UVA/CE • Analista e Subdesenvolvedor de Sistemas - Unopar - IFCE</p>
     </footer>
 
-    <script src="js/etapas.js?v=20260817-2024"></script>
-    <script src="js/config.js?v=20260817-2024"></script>
-    <script src="js/planilha.js?v=20260817-2024"></script>
-    <script src="js/endereco.js?v=20260817-2024"></script>
-    <script src="js/script.js?v=20260817-2024"></script>
-    <script src="js/install.js?v=20260817-2024"></script>
+    <script src="js/etapas.js?v=20260821-1"></script>
+    <script src="js/config.js?v=20260821-1"></script>
+    <script src="js/planilha.js?v=20260821-1"></script>
+    <script src="js/endereco.js?v=20260821-1"></script>
+    <script src="js/script.js?v=20260821-1"></script>
+    <script src="js/install.js?v=20260821-1"></script>
 </body>
 </html>
