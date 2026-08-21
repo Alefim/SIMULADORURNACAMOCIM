@@ -393,6 +393,28 @@ a:focus-visible {
     font-size: 14px;
 }
 
+.acoes-finalizacao {
+    padding: 0 16px 18px;
+    text-align: center;
+}
+
+.botao-exportar-final {
+    width: min(320px, 100%);
+    min-height: 50px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 16px;
+    background: #174ea6;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-exportar-final:hover:not(:disabled) {
+    filter: brightness(1.08);
+}
+
 .esquerda {
     width: 350px;
     max-width: 100%;
