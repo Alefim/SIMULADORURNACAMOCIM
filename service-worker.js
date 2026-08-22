@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'simulador-urna-camocim-';
-const CACHE_VERSION = 'v20260821-3';
+const CACHE_VERSION = 'v20260821-4';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 const BASE_URL = new URL('./', self.location.href);
 
