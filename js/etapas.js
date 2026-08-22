@@ -19,7 +19,7 @@ let etapas = [
                 numero: '45455',
                 nome: 'EUVALDETE FERRO',
                 partido: 'PSDB',
-                fotos: [{ url: 'euval.jpg', legenda: 'Candidata' }]
+                fotos: [{ url: 'euvaldete.jpg', legenda: 'Candidata' }]
             }
         ]
     },
@@ -31,13 +31,13 @@ let etapas = [
                 numero: '4044',
                 nome: 'ROGER AGUIAR',
                 partido: 'PSB',
-                fotos: []
+                fotos: [{ url: 'rogeraguiar.jpg', legenda: 'Candidata' }]
             },
             {
                 numero: '4077',
                 nome: 'TAINAH MARINHO',
                 partido: 'PSB',
-                fotos: []
+                fotos: [{ url: 'tainahmarinho.jpg', legenda: 'Candidata' }]
             }
         ]
     }
