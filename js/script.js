@@ -11,6 +11,32 @@ let votoBranco = false;
 let votos = [];
 let simulacaoFinalizada = false;
 
+const sonsUrna = {
+    numeros: new Audio('audios/numeros.mp3'),
+    corrige: new Audio('audios/corrige.mp3'),
+    confirma: new Audio('audios/confirma.mp3')
+};
+
+Object.values(sonsUrna).forEach((audio) => {
+    audio.preload = 'auto';
+    audio.load();
+});
+
+function tocarSomUrna(nome) {
+    const audio = sonsUrna[nome];
+    if (!audio) return;
+
+    audio.pause();
+    audio.currentTime = 0;
+    audio.play().catch((erro) => {
+        console.warn('O navegador bloqueou temporariamente o som da urna:', erro);
+    });
+}
+
+window.ativarSonsUrna = function ativarSonsUrna() {
+    Object.values(sonsUrna).forEach((audio) => audio.load());
+};
+
 function comecarEtapa() {
     if (simulacaoFinalizada) return;
 
@@ -65,9 +91,7 @@ function atualizaInterface() {
 function clicou(n) {
     if (simulacaoFinalizada) return;
 
-    let somNumeros = new Audio();
-    somNumeros.src = 'audios/numeros.mp3';
-    somNumeros.play();
+    tocarSomUrna('numeros');
 
     let elNumero = document.querySelector('.numero.pisca');
     if (elNumero !== null) {
@@ -99,9 +123,7 @@ function branco() {
 function corrige() {
     if (simulacaoFinalizada) return;
 
-    let somCorrige = new Audio();
-    somCorrige.src = 'audios/corrige.mp3';
-    somCorrige.play();
+    tocarSomUrna('corrige');
     comecarEtapa();
 }
 
@@ -156,11 +178,9 @@ function confirma() {
     if (!etapa) return;
 
     let votoConfirmado = false;
-    let somConfirma = new Audio('audios/confirma.mp3');
-
     if (votoBranco === true) {
         votoConfirmado = true;
-        somConfirma.play();
+        tocarSomUrna('confirma');
 
         votos.push({
             etapa: etapa.titulo,
@@ -168,7 +188,7 @@ function confirma() {
         });
     } else if (numero.length === etapa.numeros) {
         votoConfirmado = true;
-        somConfirma.play();
+        tocarSomUrna('confirma');
 
         votos.push({
             etapa: etapa.titulo,
