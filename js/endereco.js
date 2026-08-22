@@ -87,7 +87,11 @@ iniciarBtn.addEventListener('click', () => {
     };
 
     enderecoSelecionado.textContent =
-        'Participante fictício: ' + nome + ' • ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
+        'Endereço fictício: ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
+
+    if (typeof window.ativarSonsUrna === 'function') {
+        window.ativarSonsUrna();
+    }
 
     painelEndereco.hidden = true;
     simulador.hidden = false;
