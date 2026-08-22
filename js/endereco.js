@@ -9,7 +9,6 @@ const numeroCasaInput = document.getElementById('numero-casa');
 const observacoesInput = document.getElementById('observacoes');
 const iniciarBtn = document.getElementById('iniciar-simulacao');
 const enderecoStatus = document.getElementById('endereco-status');
-const enderecoSelecionado = document.getElementById('endereco-selecionado');
 
 let territorios = [];
 window.simulacaoContexto = null;
@@ -85,9 +84,6 @@ iniciarBtn.addEventListener('click', () => {
         observacoes: observacoes,
         iniciadaEm: new Date().toISOString()
     };
-
-    enderecoSelecionado.textContent =
-        'Endereço fictício: ' + territorio.bairro + ' • ' + ruaSelect.value + ' • Nº ' + numeroCasa;
 
     if (typeof window.ativarSonsUrna === 'function') {
         window.ativarSonsUrna();
