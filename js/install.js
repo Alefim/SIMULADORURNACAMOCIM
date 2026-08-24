@@ -1,4 +1,4 @@
-const CACHE_OFFLINE_NOME = 'simulador-urna-camocim-v20260821-3';
+const CACHE_OFFLINE_NOME = 'simulador-urna-camocim-v20260824-1';
 let eventoInstalacaoPendente = null;
 
 function atualizarEstadoConexao() {
@@ -109,7 +109,7 @@ async function prepararServiceWorker() {
         .map((registro) => registro.unregister())
     );
 
-    const registro = await navigator.serviceWorker.register('./service-worker.js?v=20260821-3', {
+    const registro = await navigator.serviceWorker.register('./service-worker.js?v=20260824-1', {
       scope: './'
     });
 

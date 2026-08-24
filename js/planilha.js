@@ -174,15 +174,24 @@ async function enviarRegistroParaPlanilha(registro) {
   if (!url) throw new Error('URL do Google Apps Script não configurada.');
   if (!navigator.onLine) throw new Error('Tablet sem conexão com a internet.');
 
-  await fetch(url, {
-    method: 'POST',
-    mode: 'no-cors',
-    cache: 'no-store',
-    headers: {
-      'Content-Type': 'text/plain;charset=utf-8'
-    },
-    body: JSON.stringify(registro)
-  });
+  const controlador = new AbortController();
+  const limite = setTimeout(() => controlador.abort(), 20000);
+
+  try {
+    await fetch(url, {
+      method: 'POST',
+      mode: 'no-cors',
+      cache: 'no-store',
+      keepalive: true,
+      signal: controlador.signal,
+      headers: {
+        'Content-Type': 'text/plain;charset=utf-8'
+      },
+      body: JSON.stringify(registro)
+    });
+  } finally {
+    clearTimeout(limite);
+  }
 
   const atualizado = {
     ...registro,
@@ -235,37 +244,13 @@ async function salvarSimulacaoNaPlanilha(votos) {
     };
   }
 
-  if (!navigator.onLine) {
-    return {
-      ok: true,
-      salvoOffline: true,
-      mensagem: 'Simulação salva no tablet. Você pode exportar o CSV mesmo sem internet.'
-    };
-  }
-
-  if (!obterUrlPlanilha()) {
-    return {
-      ok: true,
-      salvoOffline: true,
-      mensagem: 'Simulação salva no tablet. A sincronização online ainda não está configurada.'
-    };
-  }
-
-  try {
-    await enviarRegistroParaPlanilha(registro);
-    await atualizarResumoRegistros();
-    return {
-      ok: true,
-      mensagem: 'Simulação salva no tablet e enviada para a planilha.'
-    };
-  } catch (erro) {
-    console.error('Erro ao enviar simulação:', erro);
-    return {
-      ok: true,
-      salvoOffline: true,
-      mensagem: 'Simulação salva no tablet. O envio ficará pendente até a internet voltar.'
-    };
-  }
+  return {
+    ok: true,
+    salvoOffline: true,
+    mensagem: navigator.onLine
+      ? 'Simulação salva no tablet. Use “Sincronizar agora” para enviar à planilha.'
+      : 'Simulação salva no tablet sem internet. Exporte o CSV ou sincronize quando a conexão voltar.'
+  };
 }
 
 async function sincronizarSimulacoesPendentes(opcoes = {}) {
@@ -422,7 +407,7 @@ function configurarPainelDeDados() {
 
   window.addEventListener('online', () => {
     atualizarResumoRegistros();
-    sincronizarSimulacoesPendentes({ silencioso: true });
+    exibirMensagemDados('Internet disponível. Toque em “Sincronizar agora” para enviar os registros pendentes.', 'status-sucesso');
   });
   window.addEventListener('offline', atualizarResumoRegistros);
 

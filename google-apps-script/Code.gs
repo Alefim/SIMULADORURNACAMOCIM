@@ -42,6 +42,21 @@ function doPost(e) {
       }
     });
 
+    // A sincronização pode ser repetida após uma queda de conexão. O ID impede
+    // que a mesma simulação seja lançada duas vezes na planilha.
+    const simulacaoId = String(dados.simulacaoId || '').trim();
+    const colunaId = cabecalho.indexOf('ID Simulação') + 1;
+    if (simulacaoId && colunaId > 0 && aba.getLastRow() > 1) {
+      const idsExistentes = aba
+        .getRange(2, colunaId, aba.getLastRow() - 1, 1)
+        .getDisplayValues()
+        .some(function(linha) { return String(linha[0]).trim() === simulacaoId; });
+
+      if (idsExistentes) {
+        return resposta_({ ok: true, simulacaoId: simulacaoId, duplicado: true });
+      }
+    }
+
     const mapaVotos = {};
     votos.forEach(function(voto) {
       const etapa = String(voto.etapa || '').trim();
@@ -60,7 +75,7 @@ function doPost(e) {
     });
 
     const valoresBase = {
-      'ID Simulação': dados.simulacaoId || '',
+      'ID Simulação': simulacaoId,
       'Data/Hora': dados.finalizadaEm || new Date().toISOString(),
       'Nome': dados.nome || '',
       'Bairro': dados.bairro || '',

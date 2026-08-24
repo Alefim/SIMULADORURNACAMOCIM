@@ -32,4 +32,4 @@ Os registros ficam salvos no tablet. O botão **Atualizar aplicativo** remove so
 
 ## Sincronização online
 
-A URL do Google Apps Script permanece configurada em `js/config.js`. Quando houver internet, o aplicativo tenta enviar novos registros automaticamente. Também é possível usar o botão **Sincronizar agora**.
+A URL do Google Apps Script permanece configurada em `js/config.js`. Cada simulação é salva primeiro no tablet e fica pendente até que, com internet, o operador use o botão **Sincronizar agora**. O ID da simulação evita duplicidade caso uma sincronização seja repetida.
