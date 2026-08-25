@@ -144,9 +144,7 @@ async function finalizarSimulacao() {
     }
 
     const resultado = await window.salvarSimulacaoNaPlanilha(votos);
-    status.textContent = resultado.ok
-        ? 'Simulação concluída. Registro salvo neste tablet.'
-        : resultado.mensagem;
+    status.textContent = resultado.ok ? 'Simulação concluída.' : resultado.mensagem;
     status.classList.add(resultado.ok ? 'status-sucesso' : 'status-aviso');
 }
 
