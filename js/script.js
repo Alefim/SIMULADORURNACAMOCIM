@@ -134,19 +134,9 @@ async function finalizarSimulacao() {
     tela.innerHTML = `
         <div class="aviso--gigante">FIM</div>
         <div id="status-planilha" class="status-planilha">Salvando simulação...</div>
-        <div class="acoes-finalizacao">
-            <button id="exportar-csv-final" class="botao-exportar-final" type="button" hidden>
-                Exportar dados salvos (CSV)
-            </button>
-            <button id="sincronizar-final" class="botao-exportar-final" type="button" hidden>
-                Sincronizar registros pendentes
-            </button>
-        </div>
     `;
 
     const status = document.getElementById('status-planilha');
-    const botaoExportar = document.getElementById('exportar-csv-final');
-    const botaoSincronizar = document.getElementById('sincronizar-final');
 
     if (typeof window.salvarSimulacaoNaPlanilha !== 'function') {
         status.textContent = 'Simulação finalizada. Módulo da planilha não carregado.';
@@ -154,38 +144,10 @@ async function finalizarSimulacao() {
     }
 
     const resultado = await window.salvarSimulacaoNaPlanilha(votos);
-    status.textContent = resultado.mensagem;
+    status.textContent = resultado.ok
+        ? 'Simulação concluída. Registro salvo neste tablet.'
+        : resultado.mensagem;
     status.classList.add(resultado.ok ? 'status-sucesso' : 'status-aviso');
-
-    if (resultado.ok && typeof window.exportarSimulacoesCSV === 'function') {
-        botaoExportar.hidden = false;
-        botaoExportar.addEventListener('click', async () => {
-            botaoExportar.disabled = true;
-            botaoExportar.textContent = 'Gerando arquivo CSV...';
-
-            try {
-                await window.exportarSimulacoesCSV();
-                botaoExportar.textContent = 'CSV exportado';
-            } catch (erro) {
-                console.error('Erro ao exportar CSV:', erro);
-                botaoExportar.disabled = false;
-                botaoExportar.textContent = 'Tentar exportar novamente';
-            }
-        });
-    }
-
-    if (resultado.ok && navigator.onLine && typeof window.sincronizarSimulacoesPendentes === 'function') {
-        botaoSincronizar.hidden = false;
-        botaoSincronizar.addEventListener('click', async () => {
-            botaoSincronizar.disabled = true;
-            botaoSincronizar.textContent = 'Sincronizando...';
-            const resumo = await window.sincronizarSimulacoesPendentes();
-            botaoSincronizar.textContent = resumo.pendentes === 0
-                ? 'Tudo sincronizado'
-                : 'Tentar sincronizar novamente';
-            botaoSincronizar.disabled = resumo.pendentes === 0;
-        });
-    }
 }
 
 function confirma() {
